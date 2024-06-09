@@ -102,21 +102,19 @@ nav ul li a:hover {
 
 /* inicio del article de nuevas promociones */
 
-section {
-    width: 100%;
-    height: 100%;
-}
-
 .h2promos {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .boton-scrol-producto {
     display: flex;
     margin-left: 90%;
+    position: absolute;
+    margin-top: 5%;
 }
 
 .boton-scrol-producto button {
@@ -143,11 +141,9 @@ section {
 
 .nuevasPromos {
     flex: 0 0 auto;
-    border: solid red;
     margin: 2%;
     width: 25%;
     height: 30%;
-    overflow: hidden;
 }
 
 .nuevasPromos img {
@@ -155,22 +151,140 @@ section {
     height: 80%;
 }
 
-.descripcion-promo{
-    width: 50%;
+h4 {
+    font-family: var(--textos);
+    font-weight: bold;
 }
 
-.precio-promos{
-    width: 50%;
+.descripcion-promo {
+    font-family: var(--textos);
+}
+
+.comprar-promo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.boton-comprar{
+.precio-promos {
+    color: gray;
+    text-decoration: line-through;
+    font-weight: bold;
+    font-family: var(--T-subtitulos);
+}
+
+.precio-descuentos {
+    color: var(--text-hoover);
+    font-weight: bolder;
+    font-family: var(--T-subtitulos);
+}
+
+.boton-comprar {
     background: var(--color-fondo);
-    border: solid var(--color-fondo);
-    border-radius: 5px;
-    padding: 0 10px;
-    position: absolute;
-    margin-left: 18%;
-    margin-bottom: 500px;
+    border: none;
+    font-size: 12PX;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 13px;
+    font-family: var(--T-subtitulos);
+    transition: .5s, color .10s;
+    margin-bottom: 4%;
+    /* -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s; */
+}
+
+.boton-comprar:hover {
+    background-color: var(--text-hoover);
+    font-size: 13px;
+    /* box-shadow: 0 2px 2px   0 #000000,0 5px 5px 0 #000000;
+    transform: translate(5px,0px);
+    -webkit-transform: translate(5px,0px);
+    -moz-transform:translate(5px,0px); */
+    border: none;
+}
+
+/* TENDENCIA MUJER ---- INICIO ---- */
+
+.tendencias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 0;
+}
+
+.sub-tend {
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+.tendenciaMujer {
+    display: flex;
+    flex-direction: row;
+}
+
+.tendenciaHombre {
+    display: flex;
+    flex-direction: row;
+}
+
+.nuevo {
+    border: solid red;
+    width: 30%;
+    height: 40vh;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin: 2%;
+    background-size: cover;
+}
+
+.nuevo img{
+    width: 100%;
+    height: auto;
+}
+
+@supports (object-fit: cover){
+    .nuevo img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+/* ------INICIO DE MI FOOTER ---------- */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    color: var(--color-text);
+    padding-top: 2%;
+}
+
+.subtitulo-footer {
+    font-family: var(--T-subtituloss);
+    font-size: 20px;
+    padding-bottom: 15%;
+}
+
+
+ul li {
+    list-style-type: none;
+    font-family: var(--textos);
+}
+
+ul li a:hover {
+    color: var(--text-hoover);
+    text-decoration: underline;
+}
+
+ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--textos);
+    font-size: 14px;
+}
+
+.redes{
+    font-size: 20px;
 }
