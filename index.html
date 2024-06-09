@@ -13,8 +13,7 @@
     <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de tienda deportiva mediante aliados">
 
     <!-- icon logo-->
-    <link rel="shortcut icon" href="./assest/imagenes/inicio/logo/Shopping_shop_logo.png"
-        type="imageLogo_sport_shop_deportiva_tienda">
+    <link rel="shortcut icon" href="./assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
 
     <!-- link de styles -->
     <link rel="stylesheet" href="./styles/index.css">
@@ -40,8 +39,7 @@
 <body>
     <!-- inicio del header -->
     <header>
-        <a href="#"><img class="img-logo" src="./assest/imagenes/inicio/logo/Shopping_shop_logo.png"
-                alt="shopping_shop_logo"></a>
+        <a href="#"><img class="img-logo" src="./assets/logo/Shopping_shop_logo.png" alt="shopping_shop_logo"></a>
         <button class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav">
             <div class="Buscar-container">
@@ -53,65 +51,164 @@
             <ul class="nav-list">
                 <li><a href="#">Hombre</li></a>
                 <li><a href="#">Mujer</li></a>
-                <li><a href="#">Soporte</li></a>
+                <!-- <li><a href="#">Soporte</li></a> -->
                 <li><a href="#"><i class="bi bi-person-fill"></a></i></li>
                 <li><a href="#"><i class="bi bi-bag"></a></i></li>
             </ul>
         </nav>
-
     </header>
     <!-- inicio del main -->
     <main>
-        <img class="img-banner" src="./assest/imagenes/inicio/banner/banner.jpeg" alt="renueva-potencia-resalta">
+        <img class="img-banner" src="./assets/banner-inicio.jpeg" alt="renueva-potencia-resalta">
+        <h1 class="p-banner">Renueva Potencia Resalta</h1>
+
         <!-- inicio de section -->
         <section>
             <!-- 3 articles que referenciaran nuevas promociones, tendencia mujer, tendencia hombre -->
-            <aricle>
-                <h2>Nuevas Promociones</h2>
-                <div class="nuevasPromos">
-                    <img src="./assest/imagenes/inicio/nuevasPromociones/nikeSportswear/nikeSportswear.webp" alt="nike-sport-swear">
-                    <h4>Nike Sport Swear</h4>
-                    <p>Camiseta Nike Sport 10 unidades disponibles</p>
-                    <p>$ 200.000 <span>$ 150.000</span></p>
+            <h2 class="h2promos">Nuevas Promociones</h2>
+            <div class="boton-scrol-producto">
+                <button>
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+            <aricle class="Contenedor-nuevasPromociones">
+                <div class="nuevasPromos p1">
+                    <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-mile-flash">
+                    <h4>Nike Miler Flash</h4>
+                    <p class="descripcion-promo">Camiseta Miler Flash 10 unidades disponibles</p>
+                    <p class="precio-promos">$ 200.000 <span class="precio-descuentos">$ 150.000</span></p>
+                    <button class="boton-comprar">Comprar</button>
                 </div>
-                <div class="nuevasPromos">
-                    <img src="./assest/imagenes/inicio/nuevasPromociones/nikePark20/nikePark20.webp" alt="nike-park-20">
-                    <h4>Nike Park 20</h4>
-                    <p>Training run hombre 30 unidades disponibles</p>
-                    <p>$ 300.000 <span>$ 250.000</span></p>
+                <div class="nuevasPromos p2">
+                    <img src="./assets/page-mujer/AdiColorClassicSport/AdiColorClassicSport.jpg"
+                        alt="Adi-color-sport-femenino">
+                    <h4>Nike Adi Color Sport</h4>
+                    <p class="descripcion-promo">Training run mujer 20 unidades disponibles</p>
+                    <p class="precio-promos">$ 370.000 <span class="precio-descuentos">$ 310.000</span></p>
+                    <button class="boton-comprar">Comprar</button>
                 </div>
-                <div class="nuevasPromos">
-                    <img src="./assest/imagenes/inicio/nuevasPromociones/nNikeRenewRun4/nNikeRenewRun4.webp" alt="nike-rene-run-4">
+                <div class="nuevasPromos p3">
+                    <img src="./assets/page-hombre/NikeRenewRun4/NikeRenewRun4.webp" alt="nike-rene-run-4">
                     <h4>Nike Rene Run 4</h4>
-                    <p>Zapatillas run hombre 6 unidades disponibles</p>
-                    <p>$ 250.000 <span>$ 200.000</span></p>
+                    <p class="descripcion-promo">Zapatillas run hombre 6 unidades disponibles</p>
+                    <p class="precio-promos">$ 250.000 <span class="precio-descuentos">$ 200.000</span></p>
+                    <button class="boton-comprar">Comprar</button>
                 </div>
-                <div class="nuevasPromos">
-                    <img src="./assest/imagenes/inicio/nuevasPromociones/classic-cuffed/classic-cuffed.jpg" alt="classic-cuffed">
-                    <h4>Classic Cuffed</h4>
-                    <p>Pantalón deportivo Adicolor Classic Cuffed 15 unidades disponibles</p>
-                    <p>$ 280.000 <span>$ 200.000</span></p>
+                <div class="nuevasPromos p4">
+                    <img src="./assets/page-mujer/Nike SportswearFem/NikeSportWearFem.jpg"
+                        alt="Nike-sport-Wear-femenino">
+                    <h4>Nike Sport Wear</h4>
+                    <p class="descripcion-promo">Adicolor Classic Cuffed 15 unidades disponibles</p>
+                    <p class="precio-promos">$ 280.000 <span class="precio-descuentos">$ 200.000</span></p>
+                    <button class="boton-comprar">Comprar</button>
                 </div>
             </aricle>
-            <aricle>
+
+            <!-- inicio de las tendencias de mujer-->
+            <aricle class="contenedor.tendenciaMujer">
                 <h3>Tendencia Mujer</h3>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src="./assets/page-mujer/CahquetaTerrexMulticierreFrontal/CahquetaTerrexMulticierreFrontal.jpg"
+                        alt="Cahqueta-Terrex-Multi-cierre-Frontal">
+
+                </div>
+                <div>
+                    <img src="./assets/page-mujer/MarathonGraphicTee/MarathonGraphicTee.jpg" alt="Marathon-Graphic-Tee">
+                    <button>Ver Mas</button>
+                </div>
+                <div>
+                    <img src="./assets/page-mujer/Nike Structure 25/NikeStructure25.jpg" alt="Nike-Structure-25">
+                    <button>Ver Mas</button>
+                </div>
+                <div>
+                    <img src="./assets/page-mujer/NikeAirMax97FuturaSE/NikeAirMax97FuturaSE.jpg"
+                        alt="Nike-Air-Max-97-Futura-SE">
+                    <button>Ver Mas</button>
+                </div>
+                <!-- <div>
+                    <img src="./assets/page-mujer/NikeAirForce1´07/NikeAirForce1´07.jpg" alt="Nike-Air-Force-1´07">
+                    <button>Ver Mas</button>
+                </div> -->
             </aricle>
-            <aricle>
+            <aricle class="contenedor.tendenciaHombre">
                 <h3>Tendencia Hombre</h3>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src="./assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="Galax-y-7W-hombre">
+                    <button>Ver Mas</button>
+                </div>
+                <div>
+                    <img src="./assets/page-hombre/ForeverRun NITRO™ Men's Running/ForeverRunNitroMens.jpg"
+                        alt="For-ever-Run-Nitro-Mens-hombre">
+                    <button>Ver Mas</button>
+                </div>
+                <div>
+                    <img src="./assets/page-hombre/NikeSwoosh/NikeSwoosh.jpg" alt="Nike-Swoosh">
+                    <button>Ver Mas</button>
+                </div>
+                <div>
+                    <img src="./assets/page-hombre/TenisCountryII/TenisCountryII.jpg"
+                        alt="TenisCountryII-hombre.-zapatillas-deportivas">
+                    <button>Ver Mas</button>
+                </div>
             </aricle>
         </section>
     </main>
     <!-- inicio de footer -->
     <footer>
-
+        <div>
+            <h4 class="subtitulo-footer">Productos</h4>
+            <ul>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Sudaderas</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Busos</a></li>
+                <li><a href="#">Hoddies</a></li>
+                <li><a href="#">Medias</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="subtitulo-footer">Tiendas</h4>
+            <ul>
+                <li><a href="#">Cali</a></li>
+                <li><a href="#">Bogotá D.C</a></li>
+                <li><a href="#">Medellín</a></li>
+                <li><a href="#">Cartagena</a></li>
+                <li><a href="#">Bucaramanga</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="subtitulo-footer">Aliados</h4>
+            <ul>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+                <li><a href="#">Under Armur</a></li>
+                <li><a href="#">Kappa</a></li>
+                <li><a href="#">Skechers</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="subtitulo-footer">Redes Sociales</h4>
+            <ul>
+                <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="subtitulo-footer">Linea Soporte</h4>
+            <ul>
+                <li><a href="#">línea de Quejas</a></li>
+                <li><a href="#">Línea de ayuda</a></li>
+                <li><a href="#">Problemas con tu compra</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
