@@ -7,9 +7,9 @@
     <meta name="author" content="Grupo 1">
     <meta name="keywords" content="ropa deportiva hombre,proyecto moda hombre,hombre">
     <meta name="description" content="Pagina seccion ropa deportiva para hombre">
-    <link rel="stylesheet" href="./styles/paginaHombre.css">
-    <script src="./scripts/paginaHombre.js" defer></script>
-    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="../styles/page-hombre.css">
+    <script src="" defer></script>
+    <link rel="shortcut icon" href="../assets/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Moda hombre | Sport Shop</title>
 </head>
@@ -19,7 +19,7 @@
         <nav class="menuNavegacion">
             <a href="">
                 <div class="logo">
-                <img class="imgLogo" src="" alt="Logo Sport Shop" ></div>
+                <img class="imgLogo" src="../assets/logo.jpeg" alt="Logo Sport Shop" ></div>
             </a>
             <div id="buscarContenedor">
                 <input type="text" id="buscar" placeholder="buscar">
@@ -29,7 +29,7 @@
                 </span>                
             </div>
             <ul class="listaMenu">
-                <li><a href="./paginaHombre.html">HOMBRE</a></li>
+                <li><a href="./page-hombre.html">HOMBRE</a></li>
                 <li><a href="#">MUJER</a></li>
                 <li><a href="#">SOPORTE</a></li>
                 <li><a href="#"><i class="bi bi-person"></i></a></li>
@@ -41,18 +41,18 @@
     <main>
         <section class="imagenEntradaPag">
             <div class="imagenHombres">
-                <img id="imgSeccion1" src="./assets/hombresImagen2.jpg" alt="hombre entrenando en el gimnasio" >
+                <img id="imgSeccion1" src="../assets/page-hombre/hombresImagen2.jpg" alt="hombre entrenando en el gimnasio" >
                 <H1>ENTRENA CON LIBERTAD Y COMODIDAD</H1>
                 <h2>CALIDAD Y TENDENCIA</h2>
             </div>
         </section>
         <section class="redireccionamiento">
             <div class="redireccionamientoRopa">
-                <img src="./assets/ropaEnlace.jpg" alt="imagen hombre con ropa deportiva">
+                <img src="../assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="imagen hombre con ropa deportiva">
                 <p>
                     Ropa deportiva
                 </p>
-                <a href="">
+                <a href="#ropa">
                     <button class="botonRedireccionamiento"><p>ver mas</p><i class="bi bi-arrow-right-short"></i></button>
                 </a>
             </div>
@@ -61,15 +61,15 @@
                 <p>
                     Calzado deportivo
                 </p>
-                <a href="">
+                <a href="#calzado">
                     <button class="botonRedireccionamiento"><p>ver mas</p><i class="bi bi-arrow-right-short"></i></button>
                 </a>
             </div>
         </section>
-        <seccion class="ropa">
+        <seccion id="ropa">
             <h2>ROPA DEPORTIVA</h2>
             <div class="ropaImagen1">
-                <img src="./assets/camisetaAdidas1.jpg" alt="">
+                <img src="../assets/page-hombre/camiseta de entrenamiento gym+/camiseta de entrenamiento gym+.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="ropaImagen2">
-                <img src="./assets/camisetaNike1.jpg" alt="">
+                <img src="../assets/page-hombre/camisetaPuma2/camisetaPuma2.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="ropaImagen3">
-                <img src="./assets/camisetaPuma1.jpg" alt="">
+                <img src="../assets/page-hombre/mmq men's tee/MMQ men's tee.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="ropaImagen4">
-                <img src="./assets/camisetaPuma2.jpg" alt="">
+                <img src="../assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -137,7 +137,7 @@
                 </div>
             </div>
             <div class="ropaImagen5">
-                <img src="./assets/ropaEnlace.jpg" alt="">
+                <img src="../assets/page-hombre/nike sportswear/nike sportswear.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -154,7 +154,24 @@
                 </div>
             </div>
             <div class="ropaImagen6">
-                <img src="./assets/sudaderaNike1.jpg" alt="">
+                <img src="../assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="">
+                <div class="nombreProducto">
+                    <p>Lorem, ipsum dolor </p>
+                </div>
+                <div class="descripcionProducto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                        consectetur voluptatum esse suscipit ut itaque.</p>
+                </div>
+                <div class="precio">
+                    <p>$precio$</p>
+                </div>
+                <div id="botonComprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+            <div class="ropaImagen7">
+                <img src="../assets/page-hombre/NikeSportswear/NikeSportWear.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -172,10 +189,10 @@
             </div>
            
         </seccion>
-        <seccion class="calzado">
+        <seccion id="calzado">
             <h2>CALZADO DEPORTIVO</h2>
             <div class="calzadoImagen1">
-                <img src="./assets/adidas1.jpg" alt="">
+                <img src="../assets/page-hombre/ForeverRun NITRO™ Men's Running/ForeverRunNitroMens.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -192,7 +209,7 @@
                 </div>
             </div>
             <div class="calzadoImagen2">
-                <img src="./assets/adidas2.jpg" alt="">
+                <img src="../assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -209,7 +226,7 @@
                 </div>
             </div>
             <div class="calzadoImagen3">
-                <img src="./assets/adidas3.jpg" alt="">
+                <img src="../assets/page-hombre/GV special sneakers/GV special sneakers.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -226,7 +243,7 @@
                 </div>
             </div>
             <div class="calzadoImagen4">
-                <img src="./assets/nike1.jpg" alt="">
+                <img src="../assets/page-hombre/nike intereact run/nike interact run.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -243,7 +260,7 @@
                 </div>
             </div>
             <div class="calzadoImagen5">
-                <img src="./assets/nike2.jpg" alt="">
+                <img src="../assets/page-hombre/nike P-6000/nike P-6000.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -260,7 +277,75 @@
                 </div>
             </div>
             <div class="calzadoImagen6">
-                <img src="./assets/puma1.jpg" alt="">
+                <img src="../assets/page-hombre/NikeRenewRun4/NikeRenewRun4.webp" alt="">
+                <div class="nombreProducto">
+                    <p>Lorem, ipsum dolor </p>
+                </div>
+                <div class="descripcionProducto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                        consectetur voluptatum esse suscipit ut itaque.</p>
+                </div>
+                <div class="precio">
+                    <p>$precio$</p>
+                </div>
+                <div id="botonComprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+            <div class="calzadoImagen7">
+                <img src="../assets/page-hombre/superstar adv/superstar adv.jpg" alt="">
+                <div class="nombreProducto">
+                    <p>Lorem, ipsum dolor </p>
+                </div>
+                <div class="descripcionProducto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                        consectetur voluptatum esse suscipit ut itaque.</p>
+                </div>
+                <div class="precio">
+                    <p>$precio$</p>
+                </div>
+                <div id="botonComprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+            <div class="calzadoImagen8">
+                <img src="../assets/page-hombre/tenis lwst/tenis lwst.jpg" alt="">
+                <div class="nombreProducto">
+                    <p>Lorem, ipsum dolor </p>
+                </div>
+                <div class="descripcionProducto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                        consectetur voluptatum esse suscipit ut itaque.</p>
+                </div>
+                <div class="precio">
+                    <p>$precio$</p>
+                </div>
+                <div id="botonComprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+            <div class="calzadoImagen9">
+                <img src="../assets/page-hombre/tenis superstar/Tenis Superstar.jpg" alt="">
+                <div class="nombreProducto">
+                    <p>Lorem, ipsum dolor </p>
+                </div>
+                <div class="descripcionProducto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                        consectetur voluptatum esse suscipit ut itaque.</p>
+                </div>
+                <div class="precio">
+                    <p>$precio$</p>
+                </div>
+                <div id="botonComprar">
+                    <button>comprar</button>
+                </div>
+            </div>
+            <div class="calzadoImagen10">
+                <img src="../assets/page-hombre/TenisCountryII/TenisCountryII.jpg" alt="">
                 <div class="nombreProducto">
                     <p>Lorem, ipsum dolor </p>
                 </div>
@@ -282,7 +367,73 @@
 
     </main>
     <footer>
+        <div class="productospiedepagina">
 
+            <h3>Productos</h3>
+
+            <ul>
+                <li>Camisetas</li>
+                <li>Pantalones</li>
+                <li>Sudaderas</li>
+                <li>Tenis</li>
+                <li>Busos</li>
+                <li>hoddels</li>
+                <li>Medias</li>
+                <li>Accesorios</li>
+            </ul>
+
+
+        </div>
+        <div class="tiendaspiedepagina">
+            
+            <h3>Tiendas</h3>
+
+            <ul>
+                <li>Cali</li>
+                <li>Bogota</li>
+                <li>Medellin</li>
+                <li>Cartagena</li>
+                <li>Bucaramanga</li>
+            </ul>
+
+        </div>
+        <div class="aliadospiedepagina">
+
+            <h3>Aliados</h3>
+
+            <ul>
+                <li>Nike</li>
+                <li>Adidas</li>
+                <li>Puma</li>
+                <li>Under Armour</li>
+                <li>Skechers</li>
+            </ul>
+
+        </div>
+        <div class="redessocialespiedepagina">
+
+            <h3>Redes sociales</h3>
+
+            <ul>
+                <li><i class="bi bi-envelope"></i></li>
+                <li><i class="bi bi-instagram"></i></li>
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-whatsapp"></i></li>
+            </ul>
+
+        </div>
+        <div class="lineadesoportepiedepagina">
+
+            <h3>Linea Soporte</h3>
+            <ul>
+                <li>Lineas de quejas</li>
+                <li>Linea de ayuda</li>
+                <li>Problemas con tu compra</li>
+            </ul>
+
+            
+
+        </div>
     </footer>
 
 </body>
