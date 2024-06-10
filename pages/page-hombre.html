@@ -9,7 +9,7 @@
     <meta name="description" content="Pagina seccion ropa deportiva para hombre">
     <link rel="stylesheet" href="../styles/page-hombre.css">
     <script src="" defer></script>
-    <link rel="shortcut icon" href="../assets/logo.jpeg">
+    <link rel="shortcut icon" href="../assets/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Moda hombre | Sport Shop</title>
 </head>
@@ -17,177 +17,202 @@
 <body>
     <header>
         <nav class="menuNavegacion">
-            <a href="">
-                <div class="logo">
-                <img class="imgLogo" src="../assets/logo.jpeg" alt="Logo Sport Shop" ></div>
-            </a>
+            <div class="logo">
+                <a href="../index.html">
+                    <img class="imgLogo" src="../assets/logo.png" alt="Logo Sport Shop" width="75px" height="75px">
+                </a>
+            </div>
+
             <div id="buscarContenedor">
-                <input type="text" id="buscar" placeholder="buscar">
-                <span id="buscarIcono">
+                <input type="text" id="buscar" placeholder="Buscar...">
+                <span class="buscarIcono">
                     <i class="bi bi-search"></i>
                     <!--tengo que arreglar esto en estilos-->
-                </span>                
+                </span>
             </div>
             <ul class="listaMenu">
                 <li><a href="./page-hombre.html">HOMBRE</a></li>
                 <li><a href="#">MUJER</a></li>
-                <li><a href="#">SOPORTE</a></li>
                 <li><a href="#"><i class="bi bi-person"></i></a></li>
                 <li><a href="#"><i class="bi bi-handbag"></i></a></li>
             </ul>
+
         </nav>
 
     </header>
     <main>
         <section class="imagenEntradaPag">
             <div class="imagenHombres">
-                <img id="imgSeccion1" src="../assets/page-hombre/hombresImagen2.jpg" alt="hombre entrenando en el gimnasio" >
-                <H1>ENTRENA CON LIBERTAD Y COMODIDAD</H1>
-                <h2>CALIDAD Y TENDENCIA</h2>
+
+                <div class="parrafoImgEntrada">
+                    <p class="parrafoH1">ENTRENA CON LIBERTAD Y COMODIDAD</p>
+                    <p class="parrafoH2">LO MEJOR Y LO ULTIMO</p>
+                </div>
+
+
+                <img id="imgSeccion1" src="../assets/page-hombre/hombresImagen2.jpg"
+                    alt="hombre entrenando en el gimnasio" width="100%">
+
+            </div>
+
+
             </div>
         </section>
         <section class="redireccionamiento">
             <div class="redireccionamientoRopa">
-                <img src="../assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="imagen hombre con ropa deportiva">
-                <p>
-                    Ropa deportiva
-                </p>
-                <a href="#ropa">
-                    <button class="botonRedireccionamiento"><p>ver mas</p><i class="bi bi-arrow-right-short"></i></button>
-                </a>
+
+                <img src="../assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="imagen hombre con ropa deportiva"
+                    width="75%">
+                <div class="redireccionamientoDescripcion">
+                    <p class="redireccionamientoTexto">
+                        Ropa deportiva
+                    </p>
+                    <a href="#ropa">
+                        <button class="botonRedireccionamiento">
+                            <p class="textovm">ver mas</p><i class="bi bi-arrow-right-short"></i>
+                        </button>
+                    </a>
+                </div>
             </div>
             <div class="redireccionamientoCalzado">
-                <img src="./assets/tennisEnlace.jpg" alt="imagen hombre con calzado deportivo">
-                <p>
-                    Calzado deportivo
-                </p>
-                <a href="#calzado">
-                    <button class="botonRedireccionamiento"><p>ver mas</p><i class="bi bi-arrow-right-short"></i></button>
-                </a>
-            </div>
+                <video autoplay="autoplay" loop src="../assets/page-hombre/tenis lwst/video1.mp4" width="75%"></video>
+                <div class="redireccionamientoDescripcion">
+                    <p class="redireccionamientoTexto">
+                        Calzado deportivo
+                    </p>
+                    <a href="#calzado">
+                        <button class="botonRedireccionamiento">
+                            <p class="textovm">ver mas</p><i class="bi bi-arrow-right-short"></i>
+                        </button>
+                    </a>
+                </div>
+ 0           </div>
         </section>
         <seccion id="ropa">
             <h2>ROPA DEPORTIVA</h2>
-            <div class="ropaImagen1">
-                <img src="../assets/page-hombre/camiseta de entrenamiento gym+/camiseta de entrenamiento gym+.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
+            <article class="ropaImg">
+                <div class="ropaImagen1">
+                    <img src="../assets/page-hombre/camiseta de entrenamiento gym+/camiseta de entrenamiento gym+.jpg"
+                        alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
+                <div class="ropaImagen2">
+                    <img src="../assets/page-hombre/camisetaPuma2/camisetaPuma2.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div class="precio">
-                    <p>$precio$</p>
+                <div class="ropaImagen3">
+                    <img src="../assets/page-hombre/mmq men's tee/MMQ men's tee.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div id="botonComprar"> 
-                    <button>comprar</button>
+                <div class="ropaImagen4">
+                    <img src="../assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-            </div>
-            <div class="ropaImagen2">
-                <img src="../assets/page-hombre/camisetaPuma2/camisetaPuma2.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
+                <div class="ropaImagen5">
+                    <img src="../assets/page-hombre/nike sportswear/nike sportswear.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
+                <div class="ropaImagen6">
+                    <img src="../assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div class="precio">
-                    <p>$precio$</p>
+                <div class="ropaImagen7">
+                    <img src="../assets/page-hombre/NikeSportswear/NikeSportWear.jpg" alt="">
+                    <div class="nombreProducto">
+                        <p>Lorem, ipsum dolor </p>
+                    </div>
+                    <div class="descripcionProducto">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
+                            qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
+                            consectetur voluptatum esse suscipit ut itaque.</p>
+                    </div>
+                    <div class="precio">
+                        <p>$precio$</p>
+                    </div>
+                    <div id="botonComprar">
+                        <button>comprar</button>
+                    </div>
                 </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-            <div class="ropaImagen3">
-                <img src="../assets/page-hombre/mmq men's tee/MMQ men's tee.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
-                </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
-                </div>
-                <div class="precio">
-                    <p>$precio$</p>
-                </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-            <div class="ropaImagen4">
-                <img src="../assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
-                </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
-                </div>
-                <div class="precio">
-                    <p>$precio$</p>
-                </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-            <div class="ropaImagen5">
-                <img src="../assets/page-hombre/nike sportswear/nike sportswear.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
-                </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
-                </div>
-                <div class="precio">
-                    <p>$precio$</p>
-                </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-            <div class="ropaImagen6">
-                <img src="../assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
-                </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
-                </div>
-                <div class="precio">
-                    <p>$precio$</p>
-                </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-            <div class="ropaImagen7">
-                <img src="../assets/page-hombre/NikeSportswear/NikeSportWear.jpg" alt="">
-                <div class="nombreProducto">
-                    <p>Lorem, ipsum dolor </p>
-                </div>
-                <div class="descripcionProducto">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis eos nesciunt laborum
-                        qui laudantium pariatur provident nisi mollitia vero. Alias, excepturi iusto quibusdam
-                        consectetur voluptatum esse suscipit ut itaque.</p>
-                </div>
-                <div class="precio">
-                    <p>$precio$</p>
-                </div>
-                <div id="botonComprar">
-                    <button>comprar</button>
-                </div>
-            </div>
-           
+            </article>
+
         </seccion>
         <seccion id="calzado">
             <h2>CALZADO DEPORTIVO</h2>
@@ -361,8 +386,8 @@
                     <button>comprar</button>
                 </div>
             </div>
-        
-        
+
+
         </seccion>
 
     </main>
@@ -385,7 +410,7 @@
 
         </div>
         <div class="tiendaspiedepagina">
-            
+
             <h3>Tiendas</h3>
 
             <ul>
@@ -431,7 +456,7 @@
                 <li>Problemas con tu compra</li>
             </ul>
 
-            
+
 
         </div>
     </footer>
