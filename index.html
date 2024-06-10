@@ -45,7 +45,7 @@
             <div class="Buscar-container">
                 <input class="input" type="text" id="search-input" placeholder="Buscar...">
                 <button class="icon-buscar" id="buscar-button">
-                    <i class="bi bi-search"></i>
+                    <i class="bi bi-search" aria-hidden="true" ></i>
                 </button>
             </div>
             <ul class="nav-list">
@@ -59,9 +59,28 @@
     </header>
     <!-- inicio del main -->
     <main>
-        <img class="img-banner" src="./assets/banner-inicio.jpeg" alt="renueva-potencia-resalta">
-        <h1 class="p-banner">Renueva Potencia Resalta</h1>
-
+        <article class="container-collage">
+            <div class="collage c-1">
+                <img src="./assets/page-hombre/AtleticoNacional/AtleticoNacional.jpg" alt="atletico-nacional">
+            </div>
+            <div class="collage c-2">
+                <img src="./assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="ropa-enlace">
+            </div>
+            <div class="collage c-3">
+                <img src="./assets/page-mujer/ChaquetaTerrexMulti2LRain.Rdy/ChaquetaTerrexMulti2LRain.Rdy.jpg" alt="caqueta-muilti-rain">
+            </div>
+            <div class="collage c-4">
+                <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-miler-flash">
+            </div>
+            <div class="collage c-5">
+                <img src="./assets/page-mujer/NikeSportswearClubFleece/NikeSportsWearClubFleece.jpg" alt="sport-wear-club">
+            </div>
+            <div class="collage c-6">
+                <img src="./assets/page-hombre/sudaderaNike1/sudaderaNike1.jpg" alt="nike-dudadera">
+            </div>
+        </article>
+            <!-- <img class="img-banner" src="./assets/banner-inicio.png" alt="renueva-potencia-resalta"> -->
+            <h1 class="p-banner"> <span class="potencia"> Shopping Shop</span> <br> Colecciones deportivas de 2024 </h1>
         <!-- EN ESTA PAGINA REALIZAREMOS 3 SECTION, 1 PARA NUEVAS PROMOCIONES, 1 PARA TENDENCIA MUJER, 1 PARA TENDENCIA HOMBRE -->
 
         <!-- inicio de section de mis promociones -->
@@ -127,53 +146,57 @@
 
         <section class="tendencias">
             <!-- inicio de las tendencias de mujer-->
-
             <h2 class="sub-tend">Tendencia Mujer</h2>
+            <div class="boton-scrol-producto">
+                <button>
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
             <aricle class="tendenciaMujer">
                 <div class="nuevo">
+                    <button class="boton-verMas">Ver mas</button>
                     <img src="./assets/page-mujer/CahquetaTerrexMulticierreFrontal/CahquetaTerrexMulticierreFrontal.jpg"
                         alt="Cahqueta-Terrex-Multi-cierre-Frontal">
-                    <button class="ver-mujer">Ver Mas</button>
                 </div>
                 <div class="nuevo">
+                    <button class="boton-verMas">Ver mas</button>
                     <img src="./assets/page-mujer/MarathonGraphicTee/MarathonGraphicTee.jpg" alt="Marathon-Graphic-Tee">
-                    <button class="ver-mujer">Ver Mas</button>
                 </div>
                 <div class="nuevo">
                     <img src="./assets/page-mujer/Nike Structure 25/NikeStructure25.jpg" alt="Nike-Structure-25">
-                    <button class="ver-mujer">Ver Mas</button>
                 </div>
                 <div class="nuevo">
                     <img src="./assets/page-mujer/NikeAirMax97FuturaSE/NikeAirMax97FuturaSE.jpg"
                         alt="Nike-Air-Max-97-Futura-SE">
-                    <button class="ver-mujer">Ver Mas</button>
                 </div>
                 <div class="nuevo">
                     <img src="./assets/page-mujer/NikeAirForce1´07/NikeAirForce1´07.jpg" alt="Nike-Air-Force-1´07">
-                    <button class="ver-mujer">Ver Mas</button>
                 </div>
             </aricle>
 
             <!-- inicio de tendencia de hombre - section -->
+
             <h2 class="sub-tend">Tendencia Hombre</h2>
+            <div class="boton-scrol-producto sc2">
+                <button>
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
             <aricle class="tendenciaHombre">
                 <div class="nuevo">
                     <img src="./assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="Galax-y-7W-hombre">
-                    <button>Ver Mas</button>
                 </div>
                 <div class="nuevo">
-                    <img src="./assets/page-hombre/ForeverRun NITRO™ Men's Running/ForeverRunNitroMens.jpg"
-                        alt="For-ever-Run-Nitro-Mens-hombre">
-                    <button>Ver Mas</button>
+                    <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg" alt="ResponseRunerU-Mens-hombre">
                 </div>
                 <div class="nuevo">
-                    <img src="./assets/page-hombre/NikeSwoosh/NikeSwoosh.jpg" alt="Nike-Swoosh">
-                    <button>Ver Mas</button>
-                </div>
-                <div class="nuevo">
-                    <img src="./assets/page-hombre/TenisCountryII/TenisCountryII.jpg"
-                        alt="TenisCountryII-hombre.-zapatillas-deportivas">
-                    <button>Ver Mas</button>
+                    <img src="./assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="Nike-Club-Fleece">
                 </div>
             </aricle>
         </section>
