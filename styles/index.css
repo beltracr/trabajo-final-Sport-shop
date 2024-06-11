@@ -113,7 +113,6 @@ nav ul li a:hover {
 /* ------GRID COLLAGE IMAGENES BANNER -------- */
 
 .container-collage{
-    border: solid red;
     width: 100%;
     height: 100%;
     display: grid;
