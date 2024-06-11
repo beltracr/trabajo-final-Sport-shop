@@ -108,16 +108,18 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--text-hoover);
     text-decoration: underline;
-    font-size: 22px;
 }
 
 /* ------GRID COLLAGE IMAGENES BANNER -------- */
 
 .container-collage{
-    overflow: hidden;
+    border: solid red;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    position: relative;
 }
 
 .container-collage img{
@@ -170,11 +172,11 @@ nav ul li a:hover {
 .p-banner {
     display: block;
     position: absolute;
-    bottom: -16px;
-    width: 35%;
-    height: 30%;
-    margin-left: 2%;
-    font-size: 50px;
+    bottom: 40px;
+    width: 50%;
+    height: 35%;
+    margin-left: 3%;
+    font-size: 70px;
     font-weight: bold;
     color: var(--color-text);
     font-family: var(--textoAnuncios);
@@ -184,19 +186,56 @@ nav ul li a:hover {
 
 /* inicio del article de nuevas promociones */
 
+.nueva-prom{
+    width: 70%;
+    display: flex;
+    position: relative;
+    margin-left: 30%;
+}
+
 .h2promos {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
     margin-top: 3%;
-    margin-bottom: 5%;
 }
 
-.boton-scrol-producto {
+.b1{
+    margin-top: 7%;
+    margin-left: 30%;
+    bottom: -10px;
+}
+
+/* ----Botones para cambiar imagen de las tendencias mujer y hombre */
+
+.cont-new{
     display: flex;
-    margin-left: 90%;
-    position: absolute;
-    margin-top: 5%;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.b2{
+    margin-top: 3%;
+}
+
+
+/* Boton para cambiar imagen */
+
+.boton-scrol-producto {
+   display: flex;
+   justify-content:end;
+}
+
+.scrol-producto button {
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 60px;
+    background: none;
+    border: 0;
+    color: inherit;
+    color: var(--color-fondo);
 }
 
 .boton-scrol-producto button {
@@ -212,10 +251,6 @@ nav ul li a:hover {
 
 .boton-scrol-producto button:hover {
     font-size: 65px;
-}
-
-.sc2 {
-    margin-top: 37%;
 }
 
 .Contenedor-nuevasPromociones {
@@ -302,11 +337,13 @@ h4 {
 .tendenciaMujer {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .tendenciaHombre {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .nuevo {
