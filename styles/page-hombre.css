@@ -91,6 +91,12 @@ header {
     color: var(--colorblanco);
     font-family: var(--T-subtitulos);
 }
+main{
+width: 100%;
+height: 100%;
+padding-bottom: 20%;
+
+}
 
 .imagenEntradaPag{
 
@@ -171,13 +177,149 @@ header {
     text-decoration: none;
     
 }
+
+#ropa{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .ropaImg{
 
-    display: grid;
-    justify-content: center;
+    width: 70%;
+    display: grid;  
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns:repeat(2, 1fr) ;
     background-color: var(--colorblanco);
+    padding-bottom: 20%;
+    gap: 2%;
+    
+  
+    
+    
 
 }
 
+.tituloRopa{
+
+    font-family: var(--T-subtitulos);
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 60%;
+   font-size: 200%;
+}
+
+
+.ropaImagen3{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 60%;
+
+    
+
+}
+
+
+
+.ropaImagen2{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+}
+
+
+
+.nombreProducto{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    padding: 2%;
+}
+.descripcionProducto{
+
+    font-family: var(--textos);
+    padding: 2%;
+   
+}
+.precio{
+    font-family: var(--textos);
+    font-weight: bold;
+    padding-left: 10%;
+
+}
+
+.botonC{
+
+    
+    
+    
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    
+}
+#botonComprar{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    font-size: 110%;
+    background-color: var(--colornaranja);
+    width: 40%;
+    border: none;
+    height: 110%;
+    border-radius: 10px;
+   
+
+    
+
+}
+#calzado{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+.calzadoImg{
+
+    width: 70%;
+    display: grid;  
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns:repeat(2, 1fr) ;
+    background-color: var(--colorblanco);
+    gap: 2%;
+    padding-bottom: 20%;
+  
+    
+    
+
+}
+.tituloCalzado{
+    font-family: var(--T-subtitulos);
+    padding-bottom: 5%;
+   padding-right: 60%;
+   font-size: 200%;
+}
+.img{padding: 1%;}
+
+footer{
+
+    background-color: var(--colornegro);
+    font-family: var(--textos);
+    color: var(--colorblanco);
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+   
+}
+footer ul{
+
+    list-style: none;
+    font-weight: lighter;
+}
