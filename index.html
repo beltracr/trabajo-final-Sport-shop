@@ -7,16 +7,14 @@
 
     <!-- Metas donde ingresar autores. descripción, keywords -->
 
-    <meta name="author" content="Angelo Gonzalez, Natalia Salamanca, Cristian Beltran">
-    <meta name="keywords" content="Inicio de pagina web sport shop, ropa deportiva, deportes, prendas running, box, descuentos, 
-                ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
-    <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de tienda deportiva mediante aliados">
+    <meta name="author" content="Angelo Gonzalez, Cristian Beltran">
+    <meta name="keywords" content="Inicio de pagina web sport shopping">
+    <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de ropa deportiva, deportes, prendas running, box, descuentos, 
+    ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
 
     <!-- icon logo-->
     <link rel="shortcut icon" href="./assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
 
-    <!-- link de styles -->
-    <link rel="stylesheet" href="./styles/index.css">
 
     <!-- link enlace de bootstrap -->
 
@@ -24,6 +22,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- link de styles -->
+    <link rel="stylesheet" href="./styles/index.css">
 
     <!-- link enlace de bootstrap javaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -49,39 +51,73 @@
                 </button>
             </div>
             <ul class="nav-list">
-                <li><a href="#">Hombre</li></a>
-                <li><a href="#">Mujer</li></a>
+                <li><a href="./pages/page-hombre.html">Hombre</li></a>
+                <li><a href="./pages/page.mujer.html">Mujer</li></a>
                 <!-- <li><a href="#">Soporte</li></a> -->
-                <li><a href="#"><i class="bi bi-person-fill"></a></i></li>
-                <li><a href="#"><i class="bi bi-bag"></a></i></li>
+                <button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
+                </button>
+                <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
             </ul>
+
+            <!-- Modal inicio de sesion -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header inicio-sesion">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo electrónico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer bot-ini-cre-cuet">
+                            <button type="button" class="btn btn-ini-ses">Iniciar sesión</button>
+                            <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
+                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal">Crear Cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- inicio del main -->
     <main>
-        <article class="container-collage">
-            <div class="collage c-1">
-                <img src="./assets/page-hombre/AtleticoNacional/AtleticoNacional.jpg" alt="atletico-nacional">
-            </div>
-            <div class="collage c-2">
-                <img src="./assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="ropa-enlace">
-            </div>
-            <div class="collage c-3">
-                <img src="./assets/page-mujer/ChaquetaTerrexMulti2LRain.Rdy/ChaquetaTerrexMulti2LRain.Rdy.jpg"
-                    alt="caqueta-muilti-rain">
-            </div>
-            <div class="collage c-4">
-                <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-miler-flash">
-            </div>
-            <div class="collage c-5">
-                <img src="./assets/page-mujer/NikeSportswearClubFleece/NikeSportsWearClubFleece.jpg"
-                    alt="sport-wear-club">
-            </div>
-            <div class="collage c-6">
-                <img src="./assets/page-hombre/sudaderaNike1/sudaderaNike1.jpg" alt="nike-dudadera">
-            </div>
-        </article>
 
+        <div class="prueba">
+            <article class="container-collage">
+                <div class="collage c-1">
+                    <img src="./assets/page-hombre/AtleticoNacional/AtleticoNacional.jpg" alt="atletico-nacional">
+                </div>
+                <div class="collage c-2">
+                    <img src="./assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="ropa-enlace">
+                </div>
+                <div class="collage c-3">
+                    <img src="./assets/page-mujer/ChaquetaTerrexMulti2LRain.Rdy/ChaquetaTerrexMulti2LRain.Rdy.jpg"
+                        alt="caqueta-muilti-rain">
+                </div>
+                <div class="collage c-4">
+                    <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-miler-flash">
+                </div>
+                <div class="collage c-5">
+                    <img src="./assets/page-mujer/NikeSportswearClubFleece/NikeSportsWearClubFleece.jpg"
+                        alt="sport-wear-club">
+                </div>
+                <div class="collage c-6">
+                    <img src="./assets/page-hombre/sudaderaNike1/sudaderaNike1.jpg" alt="nike-dudadera">
+                </div>
+            </article>
+        </div>
         <!-- <img class="img-banner" src="./assets/banner-inicio.png" alt="renueva-potencia-resalta"> -->
 
         <h1 class="p-banner"> <span class="potencia"> Shopping Shop</span> <br> Colecciones deportivas 2024 </h1>

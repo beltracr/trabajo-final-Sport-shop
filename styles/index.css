@@ -18,7 +18,7 @@
     --color-fondo: #D9D9D9;
     --fondo-red: #A80000;
     --fondo-2: #000000;
- 
+
 
     /* fuentes - tipografia */
 
@@ -51,14 +51,14 @@ header {
     max-width: 4rem;
 }
 
-.Buscar-container{
+.Buscar-container {
     width: 30%;
     height: 30px;
     display: flex;
     align-items: center;
 }
 
-input{
+input {
     width: 100%;
     height: 100%;
     display: block;
@@ -67,8 +67,7 @@ input{
     padding-left: 4%;
 }
 
-.icon-buscar{
-    /* background: none; */
+.icon-buscar {
     border: none;
     position: absolute;
     margin-left: 13%;
@@ -76,8 +75,58 @@ input{
     display: block;
 }
 
-.icon-buscar:hover{
+.icon-buscar:hover {
     color: var(--color-fondo);
+}
+
+/* ----MODAL DE INICIO DE SESION ------- */
+
+.iniciar-sesion{
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+    font-size: 23px;
+}
+
+.iniciar-sesion:hover{
+    color: var(--text-hoover);
+}
+
+.inicio-sesion{
+    align-items: center;
+}
+
+.bot-ini-cre-cuet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-ini-ses{
+    background: black;
+    color: var(--color-text);
+    padding: 10px 150px 10px 150px;
+    font-size: 18px;
+}
+
+.btn-ini-ses:hover{
+    background: var(--text-hoover);
+}
+
+.btn-crea-cta{
+    background: black;
+    color: var(--color-text);
+    padding: 10px 150px 10px 150px;
+    font-size: 18px;
+}
+
+.btn-crea-cta:hover{
+    background: var(--text-hoover);
+}
+
+.p-regis{
+    color: rgb(13, 191, 0);
+    text-decoration:underline ;
 }
 
 nav {
@@ -92,6 +141,7 @@ nav {
     flex-direction: row;
     gap: 50px;
     padding-top: 2%;
+    align-items: center;
 }
 
 nav ul li {
@@ -112,51 +162,64 @@ nav ul li a:hover {
 
 /* ------GRID COLLAGE IMAGENES BANNER -------- */
 
-.container-collage{
+main{
+    width: 100%;
+    height: auto;
+}
+
+.prueba{
+    width: 100%;
+    height: 86vh;
+}
+
+.container-collage {
+    overflow: hidden;
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    position: relative;
 }
 
-.container-collage img{
+.collage {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.container-collage img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.collage{
-    display: grid;
-    position: relative;
-}
-
-.c-1{
+.c-1 {
     grid-row: 1/3;
     grid-column: 1/2;
 }
 
-.c-2{
+.c-2 {
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
-.c-3{
+.c-3 {
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
-.c-4{
+.c-4 {
     grid-row: 1/3;
     grid-column: 3/4;
 }
 
-.c-5{
+.c-5 {
     grid-row: 1/2;
     grid-column: 4/5;
 }
 
-.c-6{
+.c-6 {
     grid-row: 2/3;
     grid-column: 4/5;
 }
@@ -179,13 +242,13 @@ nav ul li a:hover {
     font-weight: bold;
     color: var(--color-text);
     font-family: var(--textoAnuncios);
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-shadow: 1px 5px 6px #000000;
 }
 
 /* inicio del article de nuevas promociones */
 
-.nueva-prom{
+.nueva-prom {
     width: 70%;
     display: flex;
     position: relative;
@@ -199,7 +262,7 @@ nav ul li a:hover {
     margin-top: 3%;
 }
 
-.b1{
+.b1 {
     margin-top: 7%;
     margin-left: 30%;
     bottom: -10px;
@@ -207,14 +270,14 @@ nav ul li a:hover {
 
 /* ----Botones para cambiar imagen de las tendencias mujer y hombre */
 
-.cont-new{
+.cont-new {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 
-.b2{
+.b2 {
     margin-top: 3%;
 }
 
@@ -222,8 +285,8 @@ nav ul li a:hover {
 /* Boton para cambiar imagen */
 
 .boton-scrol-producto {
-   display: flex;
-   justify-content:end;
+    display: flex;
+    justify-content: end;
 }
 
 .scrol-producto button {

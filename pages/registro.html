@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metas donde ingresar autores. descripción, keywords -->
+
+    <meta name="author" content="Angelo Gonzalez, Cristian Beltran">
+    <meta name="keywords" content="Inicio de pagina web sport shopping">
+    <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de ropa deportiva, deportes, prendas running, box, descuentos, 
+    ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
+
+    <!-- icon logo-->
+    <link rel="shortcut icon" href="../assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
+
+
+    <!-- link enlace de bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- link de styles -->
+    <link rel="stylesheet" href="../styles/registro.css">
+
+    <!-- link enlace de bootstrap javaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- titulo proyecto | inicio -->
+    <title>Inicio | Sport Shop</title>
+</head>
+
+<body>
+    <!-- inicio del header -->
+    <header>
+        <a href="#"><img class="img-logo" src="../assets/logo/Shopping_shop_logo.png" alt="shopping_shop_logo"></a>
+        <button class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav">
+            <div class="Buscar-container">
+                <input class="input" type="text" id="search-input" placeholder="Buscar...">
+                <button class="icon-buscar" id="buscar-button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./pages/page-hombre.html">Hombre</li></a>
+                <li><a href="./pages/page.mujer.html">Mujer</li></a>
+                <!-- <li><a href="#">Soporte</li></a> -->
+                <button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
+                </button>
+                <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
+            </ul>
+
+            <!-- Modal inicio de sesion -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header inicio-sesion">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo electrónico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer bot-ini-cre-cuet">
+                            <button type="button" class="btn btn-ini-ses">Iniciar sesión</button>
+                            <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
+                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal">Crear Cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- -----------INICIO DE MAIN ----------------- -->
+
+    <main>
+        <!-- -----------INICIO DE SECTION ----------------- -->
+        <section>
+            <div>
+                <h1>Crear Cuenta</h1>
+                <form class="form-crear-cuenta">
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nombres Completos</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput"
+                            placeholder="Nombres Completos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Apellidos Completos</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="Apellidos Completos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                   <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                </form>
+            </div>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Departamento</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Seleccionar</option>
+                        <option value="true">Amazonas</option>
+                        <option value="">Antioquia</option>
+                        <option value="">Arauca</option>
+                        <option value="">Atlántico</option>
+                        <option value="">Bolívar</option>
+                        <option value="">Boyacá</option>    
+                        <option value="">Caldas</option>
+                        <option value="">Caquetá</option>
+                        <option value="">Casanare</option>
+                        <option value="">Cauca</option>
+                        <option value="">Cesar</option>
+                        <option value="">Chocó</option>
+                        <option value="">Córdoba</option>
+                        <option value="">Cundinamarca</option>
+                        <option value="">Guainía</option>
+                        <option value="">Guaviare</option>
+                        <option value="">Huila</option>
+                        <option value="">La Guajira</option>
+                        <option value="">Magdalena</option>
+                        <option value="">Meta</option>
+                        <option value="">Nariño</option>
+                        <option value="">Norte de Santander</option>
+                        <option value="">Putumayo</option>
+                        <option value="">Quindío</option>
+                        <option value="">Risaralda</option>
+                        <option value="">San Andrés y Providencia</option>
+                        <option value="">Santander</option>
+                        <option value="">Sucre</option>
+                        <option value="">Tolima</option>
+                        <option value="">Valle del Cauca</option>
+                        <option value="">Vaupés</option>
+                        <option value="">Vichada</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Autorizo a Sport Shopping enviar productos y
+                        promociones a mi correo electrónico</label>
+                    <label class="form-check-label" for="exampleCheck1">Acepto <a href="#">Termino y condiciones</a>
+                        Sport Shopping y <a href="#">Politicas de Privacidad</a></label>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- inicio de footer -->
+    <footer>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Productos</li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Sudaderas</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Busos</a></li>
+                <li><a href="#">Hoddies</a></li>
+                <li><a href="#">Medias</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Tiendas</li>
+                <li><a href="#">Cali</a></li>
+                <li><a href="#">Bogotá D.C</a></li>
+                <li><a href="#">Medellín</a></li>
+                <li><a href="#">Cartagena</a></li>
+                <li><a href="#">Bucaramanga</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Aliados</li>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+                <li><a href="#">Under Armur</a></li>
+                <li><a href="#">Kappa</a></li>
+                <li><a href="#">Skechers</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Redes Sociales</li>
+                <li class="redes"><a href="#"><i class="bi bi-envelope-fill redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-instagram redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-facebook redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-whatsapp redes"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Linea Soporte</li>
+                <li><a href="#">línea de Quejas</a></li>
+                <li><a href="#">Línea de ayuda</a></li>
+                <li><a href="#">Problemas con tu compra</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
