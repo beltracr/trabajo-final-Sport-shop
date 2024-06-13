@@ -91,6 +91,12 @@ header {
     color: var(--colorblanco);
     font-family: var(--T-subtitulos);
 }
+#encabezadoOpciones a:hover{
+
+    color: var(--colornaranja);
+    cursor:pointer;
+
+}
 main{
 width: 100%;
 height: 100%;
@@ -175,6 +181,14 @@ height: 100%;
     font-weight: bolder;
   
     
+
+}
+
+.botonRedireccionamiento:hover{
+
+    transform: scale(1.2);
+    cursor:pointer;
+
 
 }
 .redireccionamientoCalzado a{
@@ -268,11 +282,19 @@ height: 100%;
     border: none;
     height: 110%;
     border-radius: 10px;
+    
    
 
     
 
 }
+#botonComprar:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+
+    
+}
+
 #calzado{
     display: flex;
     flex-direction: column;
