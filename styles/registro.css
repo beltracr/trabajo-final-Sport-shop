@@ -36,7 +36,6 @@
 body {
     overflow-x: hidden;
     width: 100%;
-
 }
 
 /* inicio de mi header */
@@ -122,6 +121,12 @@ input {
     font-size: 18px;
 }
 
+.btn-crea-cta a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 .btn-crea-cta:hover{
     background: var(--text-hoover);
 }
@@ -166,7 +171,94 @@ nav ul li a:hover {
 
 main{
     width: 100%;
-    height: 100%;
+
+}
+
+section{
+    width: 60%;
+    margin: 0 22%;
+    margin-bottom: 5%;
+}
+
+h1{
+    margin: 5% 0;
+    font-family: var(--T-subtitulos);   
+    font-weight: bold;
+    font-size:  50px;
+}
+
+/* Contenedor de los datos importantes correo contraseña nombres etc */
+
+.container-crea-cuenta{
+    width: 60%;
+    margin-left: 15%;
+}
+
+.sp-obli{
+    color: var(--fondo-red);
+}
+
+.container-datos{
+    font-family: var(--textos);
+}
+
+/* contenedor de los datos de residencia y telefonos */
+
+.container-info-residen{
+    font-family: var(--textos);
+}
+
+.styles-form{
+    margin-top: 3%;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.caja-form{
+    height: 8vh;
+    border: solid #000000 1px;
+}
+
+.cf2{
+    width: 17vw;
+}
+
+.anuncio-correo{
+    font-family: var(--textos);
+    /* font-weight: bold; */
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--fondo-red);
+}
+
+
+/* terminos condiciones y politicas de privacidad  */
+
+.tex-pol{
+    font-size: 14px;
+    padding-left: 2% ;
+}
+
+.ter-cond-pol-a{
+    font-size: 14px;
+    font-weight: bold;color: var(--fondo-2);
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Boton crear cuenta */
+
+.btn-crea-cta2{
+    background: black;
+    color: var(--color-text);
+    padding: 10px 150px 10px 150px;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.btn-crea-cta2:hover{
+    background: var(--text-hoover);
 }
 
 
@@ -181,7 +273,7 @@ footer {
 }
 
 .subtitulo-footer {
-    font-family: var(--T-subtituloss);
+    font-family: var(--T-subtitulos);
     font-size: 20px;
     padding-bottom: 15%;
 }

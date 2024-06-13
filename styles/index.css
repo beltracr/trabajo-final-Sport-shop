@@ -115,9 +115,14 @@ input {
 
 .btn-crea-cta{
     background: black;
-    color: var(--color-text);
     padding: 10px 150px 10px 150px;
     font-size: 18px;
+}
+
+.btn-crea-cta a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-text);
 }
 
 .btn-crea-cta:hover{
@@ -464,7 +469,7 @@ footer {
 }
 
 .subtitulo-footer {
-    font-family: var(--T-subtituloss);
+    font-family: var(--T-subtitulos);
     font-size: 20px;
     padding-bottom: 15%;
 }
