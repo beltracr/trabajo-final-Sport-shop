@@ -269,8 +269,12 @@ main{
 
 .b1 {
     margin-top: 7%;
-    margin-left: 30%;
+    margin-left: 32%;
     bottom: -10px;
+}
+
+.b1 button:hover{
+    color: var(--text-hoover);
 }
 
 /* ----Botones para cambiar imagen de las tendencias mujer y hombre */
@@ -279,7 +283,6 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .b2 {
@@ -317,7 +320,7 @@ main{
 }
 
 .boton-scrol-producto button:hover {
-    font-size: 65px;
+    color: var(--text-hoover);
 }
 
 .Contenedor-nuevasPromociones {
@@ -325,6 +328,11 @@ main{
     flex-wrap: nowrap;
     overflow-x: auto;
     margin-top: 0;
+    scroll-behavior: smooth;    
+}
+
+.Contenedor-nuevasPromociones::-webkit-scrollbar{
+    display: none;
 }
 
 .nuevasPromos {
@@ -387,30 +395,40 @@ h4 {
 
 /* TENDENCIA MUJER ---- INICIO ---- */
 
-.tendencias {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin-top: 0;
-}
-
 .sub-tend {
     font-size: 40px;
     margin-top: 3%;
     margin-left: 1%;
 }
 
+/* SCROLS DE LAS TENDENCIAS */
+
 .tendenciaMujer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 0;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 .tendenciaHombre {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 0;  
     position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Linea codigo ocultar scrolls de tendencias */
+
+.tendenciaMujer::-webkit-scrollbar{
+    display: none;
+}
+
+.tendenciaHombre::-webkit-scrollbar{
+    display: none;
 }
 
 .nuevo {
@@ -456,7 +474,6 @@ h4 {
     font-size: 14px;
     border: none;
 }
-
 
 /* ------INICIO DE MI FOOTER ---------- */
 

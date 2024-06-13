@@ -24,15 +24,16 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-    <!-- link de styles -->
-    <link rel="stylesheet" href="./styles/index.css">
-
     <!-- link enlace de bootstrap javaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
     <!-- titulo proyecto | inicio -->
+
+    <!-- link de styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+
     <title>Inicio | Sport Shop</title>
 </head>
 
@@ -58,7 +59,24 @@
                     data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
                 </button>
                 <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
+
+                <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
+
+                <!-- <li></li><button class="btn btn iniciar-sesion" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i></button></li> -->
             </ul>
+
+            <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
+
+            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Aqui iran los productos agregados a carrito de compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  foto de producto + precios + descuentos + total 
+                </div>
+              </div> -->
 
             <!-- Modal inicio de sesion -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -84,7 +102,8 @@
                         <div class="modal-footer bot-ini-cre-cuet">
                             <button type="button" class="btn btn-ini-ses">Iniciar sesión</button>
                             <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
-                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal"> <a href="./pages/registro.html">Crear Cuenta</a></button>
+                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal"> <a
+                                    href="./pages/registro.html">Crear Cuenta</a></button>
                         </div>
                     </div>
                 </div>
@@ -128,12 +147,12 @@
             <!-- 3 articles que referenciaran nuevas promociones, tendencia mujer, tendencia hombre -->
             <div class="nueva-prom">
                 <h2 class="h2promos">Nuevas Promociones</h2>
-                <div class="scrol-producto b1">
+                <div class="scrol-producto b1" id="btn-prom-new">
                     <button>
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-left" id="btn-prom-left"></i>
                     </button>
                     <button>
-                        <i class="bi bi-chevron-right"></i>
+                        <i class="bi bi-chevron-right" id="btn-prom-right"></i>
                     </button>
                 </div>
             </div>
@@ -147,6 +166,7 @@
                         <p class="precio-descuentos">$ 150.000</p>
                         <button class="boton-comprar">COMPRAR</button>
                     </div>
+
                 </div>
                 <div class="nuevasPromos p2">
                     <img src="./assets/page-mujer/AdiColorClassicSport/AdiColorClassicSport.jpg"
@@ -186,73 +206,89 @@
 
         <!-- inicio de la section de tendencia mujer-->
 
-        <section class="tendencias">
-            <!-- inicio de las tendencias de mujer-->
-            <div class="cont-new">
-                <h2 class="sub-tend">Tendencia Mujer</h2>
-                <div class="boton-scrol-producto b2">
-                    <button>
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <button>
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
+        <section>
+            <div class="container-tenden-h-m">
+                <!-- inicio de las tendencias de mujer-->
+                <div class="cont-new">
+                    <h2 class="sub-tend">Tendencia Mujer</h2>
+                    <div class="boton-scrol-producto b2">
+                        <button>
+                            <i class="bi bi-chevron-left" id="btn-left-mujer"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-chevron-right" id="btn-right-mujer"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <aricle class="tendenciaMujer">
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-mujer/CahquetaTerrexMulticierreFrontal/CahquetaTerrexMulticierreFrontal.jpg"
-                        alt="Cahqueta-Terrex-Multi-cierre-Frontal">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-mujer/MarathonGraphicTee/MarathonGraphicTee.jpg" alt="Marathon-Graphic-Tee">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-mujer/Nike Structure 25/NikeStructure25.jpg" alt="Nike-Structure-25">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-mujer/NikeAirMax97FuturaSE/NikeAirMax97FuturaSE.jpg"
-                        alt="Nike-Air-Max-97-Futura-SE">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-mujer/NikeAirForce1´07/NikeAirForce1´07.jpg" alt="Nike-Air-Force-1´07">
-                </div>
-            </aricle>
 
-            <!-- inicio de tendencia de hombre - section -->
-            <div class="cont-new">
-                <h2 class="sub-tend">Tendencia Hombre</h2>
-                <div class="boton-scrol-producto b2">
-                    <button>
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <button>
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
+                <!-- article de tendencias mujer -->
+
+                <aricle class="tendenciaMujer">
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/CahquetaTerrexMulticierreFrontal/CahquetaTerrexMulticierreFrontal.jpg"
+                            alt="Cahqueta-Terrex-Multi-cierre-Frontal">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/MarathonGraphicTee/MarathonGraphicTee.jpg"
+                            alt="Marathon-Graphic-Tee">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/Nike Structure 25/NikeStructure25.jpg" alt="Nike-Structure-25">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/NikeAirMax97FuturaSE/NikeAirMax97FuturaSE.jpg"
+                            alt="Nike-Air-Max-97-Futura-SE">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/NikeAirForce1´07/NikeAirForce1´07.jpg" alt="Nike-Air-Force-1´07">
+                    </div>
+                </aricle>
+
+                <!-- inicio de tendencia de hombre - section -->
+
+                <div class="cont-new">
+                    <h2 class="sub-tend">Tendencia Hombre</h2>
+                    <div class="boton-scrol-producto b2">
+                        <button>
+                            <i class="bi bi-chevron-left tH" id="left-hombre"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-chevron-right tH" id="right-hombre"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <aricle class="tendenciaHombre">
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="Galax-y-7W-hombre">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg" alt="ResponseRunerU-Mens-hombre">
-                </div>
-                <div class="nuevo">
-                    <button class="boton-verMas">Ver mas</button>
-                    <img src="./assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="Nike-Club-Fleece">
-                </div>
-            </aricle>
+                <!-- article de tendencias hombre -->
+
+                <aricle class="tendenciaHombre">
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="Galax-y-7W-hombre">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg"
+                            alt="ResponseRunerU-Mens-hombre">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="Nike-Club-Fleece">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg"
+                            alt="ResponseRunerU-Mens-hombre">
+                    </div>
+                </aricle>
         </section>
     </main>
+
     <!-- inicio de footer -->
+
     <footer>
         <div>
             <ul>
@@ -305,7 +341,13 @@
                 <li><a href="#">Problemas con tu compra</a></li>
             </ul>
         </div>
+        </div>
     </footer>
+
+    <!-- Link de JavaScripts -->
+
+    <script src="./scripts/index.js"></script>
+
 </body>
 
 </html>
