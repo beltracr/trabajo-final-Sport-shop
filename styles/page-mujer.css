@@ -233,6 +233,7 @@ height: 100%;
     font-family: var(--T-subtitulos);
     font-weight: bold;
     padding: 2%;
+    text-transform: uppercase;
 }
 .descripcionProducto{
 
