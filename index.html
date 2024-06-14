@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metas donde ingresar autores. descripción, keywords -->
+
+    <meta name="author" content="Angelo Gonzalez, Cristian Beltran">
+    <meta name="keywords" content="Inicio de pagina web sport shopping">
+    <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de ropa deportiva, deportes, prendas running, box, descuentos, 
+    ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
+
+    <!-- icon logo-->
+    <link rel="shortcut icon" href="./assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
+
+
+    <!-- link enlace de bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- link enlace de bootstrap javaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- titulo proyecto | inicio -->
+
+    <!-- link de styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>Inicio | Sport Shop</title>
+</head>
+
+<!-- inicio del body, llevara main, section con 3 articles con variedad de DIV dentro. -->
+
+<body>
+    <!-- inicio del header -->
+    <header>
+        <a href="#"><img class="img-logo" src="./assets/logo/Shopping_shop_logo.png" alt="shopping_shop_logo"></a>
+        <button class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav">
+            <div class="Buscar-container">
+                <input class="input" type="text" id="search-input" placeholder="Buscar...">
+                <button class="icon-buscar" id="buscar-button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./pages/page-hombre.html">Hombre</a></li>
+                <li><a href="./pages/page.mujer.html">Mujer</a></li>
+                <!-- <li><a href="#">Soporte</li></a> -->
+                <button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
+                </button>
+                <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
+
+                <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
+
+                <!-- <li></li><button class="btn btn iniciar-sesion" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i></button></li> -->
+            </ul>
+
+            <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
+
+            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Aqui iran los productos agregados a carrito de compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  foto de producto + precios + descuentos + total 
+                </div>
+              </div> -->
+
+            <!-- Modal inicio de sesion -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header inicio-sesion">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo electrónico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer bot-ini-cre-cuet">
+                            <button type="button" class="btn btn-ini-ses">Iniciar sesión</button>
+                            <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
+                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal"> <a
+                                    href="./pages/registro.html">Crear Cuenta</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- inicio del main -->
+
+    <main>
+
+        <div class="prueba">
+            <article class="container-collage">
+                <div class="collage c-1">
+                    <img src="./assets/page-hombre/AtleticoNacional/AtleticoNacional.jpg" alt="atletico-nacional">
+                </div>
+                <div class="collage c-2">
+                    <img src="./assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="ropa-enlace">
+                </div>
+                <div class="collage c-3">
+                    <img src="./assets/page-mujer/ChaquetaTerrexMulti2LRain.Rdy/ChaquetaTerrexMulti2LRain.Rdy.jpg"
+                        alt="caqueta-muilti-rain">
+                </div>
+                <div class="collage c-4">
+                    <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-miler-flash">
+                </div>
+                <div class="collage c-5">
+                    <img src="./assets/page-mujer/NikeSportswearClubFleece/NikeSportsWearClubFleece.jpg"
+                        alt="sport-wear-club">
+                </div>
+                <div class="collage c-6">
+                    <img src="./assets/page-hombre/sudaderaNike1/sudaderaNike1.jpg" alt="nike-dudadera">
+                </div>
+            </article>
+        </div>
+
+        <!-- <img class="img-banner" src="./assets/banner-inicio.png" alt="renueva-potencia-resalta"> -->
+
+        <h1 class="p-banner"> <span class="potencia"> Shopping Shop</span> <br> Colecciones deportivas 2024 </h1>
+
+        <!-- EN ESTA PAGINA REALIZAREMOS 3 SECTION, 1 PARA NUEVAS PROMOCIONES, 1 PARA TENDENCIA MUJER, 1 PARA TENDENCIA HOMBRE -->
+
+        <!-- inicio de section de mis promociones -->
+
+        <section class="promociones-sport-shopping">
+            
+            <!-- 3 articles que referenciaran nuevas promociones, tendencia mujer, tendencia hombre -->
+            <div class="nueva-prom">
+                <h2 class="h2promos">Nuevas Promociones</h2>
+                <div class="scrol-producto b1" id="btn-prom-new">
+                    <button>
+                        <i class="bi bi-chevron-left" id="btn-prom-left"></i>
+                    </button>
+                    <button>
+                        <i class="bi bi-chevron-right" id="btn-prom-right"></i>
+                    </button>
+                </div>
+            </div>
+            <aricle class="Contenedor-nuevasPromociones">
+                <div class="nuevasPromos p1">
+                    <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-mile-flash">
+                    <h4>Nike Miler Flash</h4>
+                    <p class="descripcion-promo">Camiseta Miler Flash <br> 10 unidades disponibles</p>
+                    <div class="comprar-promo">
+                        <p class="precio-promos">$ 200.000</p>
+                        <p class="precio-descuentos">$ 150.000</p>
+                        <button class="boton-comprar">COMPRAR</button>
+                    </div>
+
+                </div>
+                <div class="nuevasPromos p2">
+                    <img src="./assets/page-mujer/AdiColorClassicSport/AdiColorClassicSport.jpg"
+                        alt="Adi-color-sport-femenino">
+                    <h4>Nike Adi Color Sport</h4>
+                    <p class="descripcion-promo">Training run mujer <br> 20 unidades disponibles</p>
+                    <div class="comprar-promo">
+                        <p class="precio-promos">$ 200.000</p>
+                        <p class="precio-descuentos">$ 150.000</p>
+                        <button class="boton-comprar">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="nuevasPromos p3">
+                    <img src="./assets/page-hombre/NikeRenewRun4/NikeRenewRun4.webp" alt="nike-rene-run-4">
+                    <h4>Nike Rene Run 4</h4>
+                    <p class="descripcion-promo">Zapatillas run hombre <br> 6 unidades disponibles</p>
+                    <div class="comprar-promo">
+                        <p class="precio-promos">$ 200.000</p>
+                        <p class="precio-descuentos">$ 150.000</p>
+                        <button class="boton-comprar">COMPRAR</button>
+                    </div>
+
+                </div>
+                <div class="nuevasPromos p4">
+                    <img src="./assets/page-mujer/Nike SportswearFem/NikeSportWearFem.jpg"
+                        alt="Nike-sport-Wear-femenino">
+                    <h4>Nike Sport Wear</h4>
+                    <p class="descripcion-promo">Adicolor Classic Cuffed <br> 15 unidades disponibles</p>
+                    <div class="comprar-promo">
+                        <p class="precio-promos">$ 200.000</p>
+                        <p class="precio-descuentos">$ 150.000</p>
+                        <button class="boton-comprar">COMPRAR</button>
+                    </div>
+                </div>
+            </aricle>
+        </section>
+
+        <!-- inicio de la section de tendencia mujer-->
+
+        <section>
+            <div class="container-tenden-h-m">
+                <!-- inicio de las tendencias de mujer-->
+                <div class="cont-new">
+                    <h2 class="sub-tend">Tendencia Mujer</h2>
+                    <div class="boton-scrol-producto b2">
+                        <button>
+                            <i class="bi bi-chevron-left" id="btn-left-mujer"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-chevron-right" id="btn-right-mujer"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- article de tendencias mujer -->
+
+                <aricle class="tendenciaMujer">
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/CahquetaTerrexMulticierreFrontal/CahquetaTerrexMulticierreFrontal.jpg"
+                            alt="Cahqueta-Terrex-Multi-cierre-Frontal">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/MarathonGraphicTee/MarathonGraphicTee.jpg"
+                            alt="Marathon-Graphic-Tee">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/Nike Structure 25/NikeStructure25.jpg" alt="Nike-Structure-25">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/NikeAirMax97FuturaSE/NikeAirMax97FuturaSE.jpg"
+                            alt="Nike-Air-Max-97-Futura-SE">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-mujer/NikeAirForce1´07/NikeAirForce1´07.jpg" alt="Nike-Air-Force-1´07">
+                    </div>
+                </aricle>
+
+                <!-- inicio de tendencia de hombre - section -->
+
+                <div class="cont-new">
+                    <h2 class="sub-tend">Tendencia Hombre</h2>
+                    <div class="boton-scrol-producto b2">
+                        <button>
+                            <i class="bi bi-chevron-left tH" id="left-hombre"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-chevron-right tH" id="right-hombre"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- article de tendencias hombre -->
+
+                <aricle class="tendenciaHombre">
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/Galaxy7W/Galaxy7W.jpg" alt="Galax-y-7W-hombre">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg"
+                            alt="ResponseRunerU-Mens-hombre">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/Nike Club Fleece/NikeClubFleece.jpg" alt="Nike-Club-Fleece">
+                    </div>
+                    <div class="nuevo">
+                        <button class="boton-verMas">Ver mas</button>
+                        <img src="./assets/page-hombre/ResponseRunerU/ResponseRunerU.jpg"
+                            alt="ResponseRunerU-Mens-hombre">
+                    </div>
+                </aricle>
+        </section>
+    </main>
+
+    <!-- inicio de footer -->
+
+    <footer>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Productos</li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Sudaderas</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Busos</a></li>
+                <li><a href="#">Hoddies</a></li>
+                <li><a href="#">Medias</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Tiendas</li>
+                <li><a href="#">Cali</a></li>
+                <li><a href="#">Bogotá D.C</a></li>
+                <li><a href="#">Medellín</a></li>
+                <li><a href="#">Cartagena</a></li>
+                <li><a href="#">Bucaramanga</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Aliados</li>
+                <li><a href="https://www.nike.com.co/">Nike</a></li>
+                <li><a href="https://www.adidas.co/">Adidas</a></li>
+                <li><a href="https://eu.puma.com/es/es/home">Puma</a></li>
+                <li><a href="https://www.underarmour.com.co/">Under Armur</a></li>
+                <li><a href="https://www.kappa-col.com/">Kappa</a></li>
+                <li><a href="https://www.co.skechers.com/">Skechers</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Redes Sociales</li>
+                <li class="redes"><a href="#"><i class="bi bi-envelope-fill redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-instagram redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-facebook redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-whatsapp redes"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Linea Soporte</li>
+                <li><a href="#">línea de Quejas</a></li>
+                <li><a href="#">Línea de ayuda</a></li>
+                <li><a href="#">Problemas con tu compra</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Link de JavaScripts -->
+
+    <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>

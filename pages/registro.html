@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metas donde ingresar autores. descripción, keywords -->
+
+    <meta name="author" content="Angelo Gonzalez, Cristian Beltran">
+    <meta name="keywords" content="Inicio de pagina web sport shopping">
+    <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de ropa deportiva, deportes, prendas running, box, descuentos, 
+    ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
+
+    <!-- icon logo-->
+    <link rel="shortcut icon" href="../assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
+
+
+    <!-- link enlace de bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- link de styles -->
+    <link rel="stylesheet" href="../styles/registro.css">
+
+    <!-- link enlace de bootstrap javaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- titulo proyecto | inicio -->
+    <title>Registro | Sport Shop</title>
+</head>
+
+<body>
+    <!-- inicio del header -->
+    <header>
+        <a href="../index.html"><img class="img-logo" src="../assets/logo/Shopping_shop_logo.png"
+                alt="shopping_shop_logo"></a>
+        <button class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav">
+            <div class="Buscar-container">
+                <input class="input" type="text" id="search-input" placeholder="Buscar...">
+                <button class="icon-buscar" id="buscar-button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./pages/page-hombre.html">Hombre</a></li>
+                <li><a href="./pages/page.mujer.html">Mujer</a></li>
+                <!-- <li><a href="#">Soporte</li></a> -->
+                <button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
+                </button>
+                <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
+            </ul>
+
+            <!-- Modal inicio de sesion -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header inicio-sesion">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Correo electrónico</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Contraseña</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer bot-ini-cre-cuet">
+                            <button type="button" class="btn btn-ini-ses">Iniciar sesión</button>
+                            <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
+                            <button type="button" class="btn btn-crea-cta" data-bs-dismiss="modal"> <a
+                                    href="./pages/registro.html">Crear Cuenta</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- -----------INICIO DE MAIN ----------------- -->
+
+    <main>
+        <!-- -----------INICIO DE SECTION ----------------- -->
+        <section>
+            <h1>Crear Cuenta</h1>
+            <div class="container-crea-cuenta">
+                <form class="form-crear-cuenta container-datos">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label styles-form">Nombres Completos <span
+                                class="sp-obli">*</span></s></label>
+                        <input type="text" class="form-control caja-form" id="formGroupExampleInput"
+                            placeholder="Nombres Completos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label styles-form">Apellidos Completos <span
+                                class="sp-obli">*</span></label>
+                        <input type="text" class="form-control caja-form" id="formGroupExampleInput2"
+                            placeholder="Apellidos Completos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label styles-form">Correo Electrónico <span
+                                class="sp-obli">*</span></label>
+                        <input type="email" class="form-control caja-form" id="exampleInputEmail1"
+                            placeholder="Correo Electrónico" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text anuncio-correo">Nunca compartiremos tu correo electrónico
+                            con nadie más.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label styles-form">Contraseña <span
+                                class="sp-obli">*</span></label>
+                        <input type="password" class="form-control caja-form" id="exampleInputPassword1"
+                            placeholder="Contraseña">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label styles-form">Confirmar Contraseña <span
+                                class="sp-obli">*</span></label>
+                        <input type="password" class="form-control caja-form" id="exampleInputPassword1"
+                            placeholder="Confirmar Contraseña">
+                    </div>
+                </form>
+
+                <form class="row g-3 container-info-residen">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label styles-form">Dirección <span
+                                class="sp-obli">*</span></label>
+                        <input type="text" class="form-control caja-form" id="inputAddress" placeholder="Dirección">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label styles-form ">Ciudad <span
+                                class="sp-obli">*</span></label>
+                        <select id="inputState" class="form-select caja-form cf2">
+                            <option selected>Seleccionar</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Bucaramanga">Bucaramanga</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Cúcuta">Cúcuta</option>
+                            <option value="Florencia">Florencia</option>
+                            <option value="Ibagué">Ibagué</option>
+                            <option value="Leticia">Leticia</option>
+                            <option value="Manizales">Manizales</option>
+                            <option value="Medellín">Medellín</option>
+                            <option value="Mitú">Mitú</option>
+                            <option value="Mocoa">Mocoa</option>
+                            <option value="Montería">Montería</option>
+                            <option value="Neiva">Neiva</option>
+                            <option value="Pasto">Pasto</option>
+                            <option value="Pereira">Pereira</option>
+                            <option value="Popayán">Popayán</option>
+                            <option value="Puerto Carreño">Puerto Carreño</option>
+                            <option value="Puerto Inírida">Puerto Inírida</option>
+                            <option value="Quibdó">Quibdó</option>
+                            <option value="Riohacha">Riohacha</option>
+                            <option value="San Andrés">San Andrés</option>
+                            <option value="San José del Guaviare">San José del Guaviare</option>
+                            <option value="Santa Marta">Santa Marta</option>
+                            <option value="Sincelejo">Sincelejo</option>
+                            <option value="Tunja">Tunja</option>
+                            <option value="Valledupar">Valledupar</option>
+                            <option value="Villavicencio">Villavicencio</option>
+                            <option value="Yopal">Yopal</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label styles-form ">Departamento <span
+                                class="sp-obli">*</span></label>
+                        <select id="inputState" class="form-select caja-form cf2">
+                            <option selected>Seleccionar</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input click-aceptar" type="checkbox" id="gridCheck">
+                            <label class="form-check-label tex-pol" for="gridCheck">
+                                Acepto <a class="ter-cond-pol-a" href="#">Terminos y condiciones</a>
+                                Sport Shopping y <a class="ter-cond-pol-a" href="./politica-privacidad.html">Politicas de Privacidad <span
+                                        class="sp-obli">*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-crea-cta2">Crear Cuenta</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- inicio de footer -->
+
+    <footer>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Productos</li>
+                <li><a href="#">Camisetas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Sudaderas</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Busos</a></li>
+                <li><a href="#">Hoddies</a></li>
+                <li><a href="#">Medias</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Tiendas</li>
+                <li><a href="#">Cali</a></li>
+                <li><a href="#">Bogotá D.C</a></li>
+                <li><a href="#">Medellín</a></li>
+                <li><a href="#">Cartagena</a></li>
+                <li><a href="#">Bucaramanga</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Aliados</li>
+                <li><a href="https://www.nike.com.co/">Nike</a></li>
+                <li><a href="https://www.adidas.co/">Adidas</a></li>
+                <li><a href="https://eu.puma.com/es/es/home">Puma</a></li>
+                <li><a href="https://www.underarmour.com.co/">Under Armur</a></li>
+                <li><a href="https://www.kappa-col.com/">Kappa</a></li>
+                <li><a href="https://www.co.skechers.com/">Skechers</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Redes Sociales</li>
+                <li class="redes"><a href="#"><i class="bi bi-envelope-fill redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-instagram redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-facebook redes"></i></a></li>
+                <li class="redes"><a href="#"><i class="bi bi-whatsapp redes"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="subtitulo-footer">Linea Soporte</li>
+                <li><a href="#">línea de Quejas</a></li>
+                <li><a href="#">Línea de ayuda</a></li>
+                <li><a href="#">Problemas con tu compra</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
