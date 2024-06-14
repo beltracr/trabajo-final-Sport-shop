@@ -24,7 +24,7 @@ body {
     background-color: var(--colorblanco);
     width: 100vw;
     height: auto;
-    overflow-y: auto;
+    overflow-x: hidden;
 
 
 }
