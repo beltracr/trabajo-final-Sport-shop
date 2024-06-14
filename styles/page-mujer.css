@@ -239,6 +239,7 @@ height: 100%;
     gap: 15%;
     font-size: 150%;
     font-weight: bolder;
+    padding-top: 10%;
   
     
 
@@ -461,3 +462,174 @@ footer ul li:hover {
    cursor: pointer;
 
 }
+@media screen and (max-width:900px) {
+
+    body{
+
+        width: 100%;
+        overflow-x: hidden;
+       
+    }
+
+
+    header{
+        width: 100%;
+        position: fixed;
+        padding-right: 10%;
+        
+        
+    }
+
+    .Buscar-container{display: none;}
+
+
+    .abrir-menu{
+
+        display: block;
+        background-color: var(--colornegro);
+        color: var(--colorblanco);
+        border: none;
+        font-size: 300%;
+       
+    }
+
+.nav-list{
+
+    position: fixed;
+    top: 7%;
+    right:61%;
+    background-color: var(--colornegro);
+    width: 60%;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+    transform: translateX(-100%);
+   
+}
+
+
+.nav-list.active{
+    transform: translateX(100%);
+
+
+}
+main{
+
+    font-size: 50%;
+}
+.imagenEntradaPag{
+
+    position:inherit;
+    background-color: #ebeeef;
+    padding-top: 10%;
+    
+}
+.parrafoImgEntrada{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../assets/page-mujer/Imagen\ inicio\ mujer.jpg) ;
+    background-size: 130%;
+ 
+   
+}
+#imgSeccion1{
+
+    display: none;
+}
+.redireccionamientoDescripcion{
+
+    width: 100%;
+    font-size: 80%;
+    gap: 10px;
+}
+.botonRedireccionamiento{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding-top: 30%;
+    padding-left: 40%;
+    padding-right: 20%;
+    
+
+
+} 
+
+#ropa{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 160%;
+}
+.tituloRopa{
+
+    font-family: var(--T-subtitulos);
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 0;
+   font-size: 150%;
+   font-weight: bolder;
+
+}
+
+.ropaImg{
+
+    width: 90%;
+}
+.descripcionProducto{
+
+    display: none;
+}
+.calzadoImg{
+
+    width: 90%;
+    font-size: 160%;
+}
+.tituloCalzado{
+
+    font-family: var(--T-subtitulos);
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 0;
+   font-size: 200%;
+   font-weight: bolder;
+
+}
+
+footer{
+
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   
+   
+
+}
+footer h3:hover{
+
+    color: var(--colornaranja);
+
+}
+
+footer ul{
+
+    display: none;
+    
+   
+
+}
+footer h3{
+
+    font-size: 60%;
+}
+
+}
+
+
