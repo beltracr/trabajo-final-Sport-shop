@@ -34,25 +34,21 @@ mujL.addEventListener("click",()=> {
 
 //  ----------- scrols boton de las tendencias hombre
 
-
-
-
 hombR.addEventListener("click",()=> {
-    content.scrollLeft += 600;
+    contentHom.scrollLeft += 600;
 } );
 
 hombL.addEventListener("click",()=> {
-    content.scrollLeft -= 600;
+    contentHom.scrollLeft -= 600;
 })
 
 // ----------- scrols boton de las nuevas promociones
 
-
 btnPromRight.addEventListener("click",()=> {
-    content.scrollLeft += 400;
+    prom.scrollLeft += 400;
 } );
 
 btnPromLeft.addEventListener("click",()=> {
-    content.scrollLeft -= 400;
+    prom.scrollLeft -= 400;
 })
 
