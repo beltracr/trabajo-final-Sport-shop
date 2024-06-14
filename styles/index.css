@@ -558,8 +558,7 @@ ul li a {
     }
 
     .nav{
-        position: relative;
-        width: 50%;
+        width: 20%;
     }
 
     .Buscar-container{
@@ -576,21 +575,23 @@ ul li a {
         color: var(--color-fondo);
         border: none;
         font-size: 300%;
-        position: absolute;
         margin-left: 62%;  
     }
 
     .nav-list {
+        display: none;
+        position: absolute;
         position: fixed;
-        top: 5%;
-        right: -5%;
+        top: 7%;
+        left: 90%;
+        padding-right: 10%;
         background-color: var(--fondo-2 );
         width: 40%;
-        height: 30%;
+        height: 40%;
         flex-direction: column;
         align-items: center;
         line-height: 30px;
-        transform: translateX(-100%);
+        transform: translateX(-80%);
     }
 /* 
     .nav-list.active {
@@ -617,10 +618,14 @@ ul li a {
     }
 
     .container-collage{
-        width: 80vw;
+        width: 100vw;
         height: 100%;
         overflow: hidden;
         position: relative;
+    }
+
+    .collage {
+        position: inherit;
     }
 
     .p-banner{
@@ -642,7 +647,7 @@ ul li a {
 
     .nueva-prom{
         width: 65%;
-        margin-left: 3%;
+        margin-left: 17%;
     }
 
     .h2promos{
@@ -682,5 +687,21 @@ ul li a {
 
     .boton-verMas{
         margin-left: 30%;
+    }
+
+    footer{
+        width: 100%;
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+        line-height: 2px;
+    }
+
+    .subtitulo-footer{
+        display: block;
+    }
+
+    footer ul li{
+        display: none;
     }
  }
