@@ -95,7 +95,7 @@ input {
 
 .btn-ini-ses{
     background: var(--colornegro);
-    color: var(--color-text);
+    color: var(--colorblanco);
     padding: 10px 150px 10px 150px;
     font-size: 18px;
 }
