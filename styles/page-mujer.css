@@ -24,78 +24,138 @@ body {
     background-color: var(--colorblanco);
     width: 100vw;
     height: auto;
-    overflow-y: auto;
+    overflow-x: hidden;
 
 
+}
+
+.abrir-menu {
+    display: none;
 }
 
 header {
     background-color: var(--colornegro);
-    width: 100%;
-    height: auto;
-
-
-
-
-
-}
-
-.menuNavegacion {
-
-
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding-right: 10%;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-
-
 }
 
-#buscarContenedor {
+.img-logo {
+    max-width: 4rem;
+}
 
-
-    width: 20%;
-    background-color: var(--colorgris);
+.Buscar-container {
+    width: 30%;
+    height: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--colorgris);
-    border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 1%;
-
 }
 
-#buscar {
-    background-color: var(--colorgris);
+input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 12px;
     border: none;
+    padding-left: 4%;
 }
 
-.listaMenu {
+.icon-buscar {
+    border: none;
+    position: absolute;
+    margin-left: 13%;
+    background: none;
+    display: block;
+}
+
+.icon-buscar:hover {
+    color: var(--colorgris);
+}
+
+/* ----MODAL DE INICIO DE SESION ------- */
+
+.iniciar-sesion{
+    padding: 0;
+    margin: 0;
+    color: var(--colorblanco);
+    font-size: 23px;
+}
+
+.iniciar-sesion:hover{
+    color: var(--colornaranja);
+}
+
+.inicio-sesion{
+    align-items: center;
+}
+
+.bot-ini-cre-cuet{
     display: flex;
-    flex-direction: row;
-    padding-right: 10%;
-    gap: 40%;
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.listaMenu a {
+.btn-ini-ses{
+    background: var(--colornegro);
+    color: var(--colorblanco);
+    padding: 10px 150px 10px 150px;
+    font-size: 18px;
+}
 
+.btn-ini-ses:hover{
+    background: var(--colornaranja);
+}
+
+.btn-crea-cta{
+    background: var(--colornegro);
+    padding: 10px 150px 10px 150px;
+    font-size: 18px;
+}
+
+.btn-crea-cta a{
+    list-style: none;
     text-decoration: none;
     color: var(--colorblanco);
-    font-family: var(--T-subtitulos);
 }
-#encabezadoOpciones a:hover{
 
+.btn-crea-cta:hover{
+    background: var(--colornaranja);
+}
+
+.p-regis{
+    color: rgb(13, 191, 0);
+    text-decoration:underline ;
+}
+
+nav {
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 2%;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--colorblanco);
+    text-decoration: none;
+    font-family: var(--T-subtitulos);
+    font-size: 20px;
+}
+
+nav ul li a:hover {
     color: var(--colornaranja);
-    cursor:pointer;
-
+    text-decoration: underline;
 }
 main{
 width: 100%;
@@ -179,6 +239,7 @@ height: 100%;
     gap: 15%;
     font-size: 150%;
     font-weight: bolder;
+    padding-top: 10%;
   
     
 
@@ -235,6 +296,17 @@ height: 100%;
    padding-bottom: 5%;
    padding-right: 60%;
    font-size: 200%;
+   font-weight: bolder;
+
+}
+
+.tituloRopa h2{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    font-size: 200%;
+
+
 }
 
 
@@ -255,10 +327,18 @@ height: 100%;
     padding: 2%;
    
 }
+.contenedorComp{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 .precio{
     font-family: var(--textos);
     font-weight: bold;
-    padding-left: 10%;
+    padding-top: 3%;
+    padding-left: 2%;
 
 }
 
@@ -267,21 +347,20 @@ height: 100%;
     
     
     
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 10%;
+    padding-right: 4%;
     
 }
 #botonComprar{
 
     font-family: var(--T-subtitulos);
     font-weight: bold;
-    font-size: 110%;
-    background-color: var(--colornaranja);
-    width: 40%;
+    font-size: 100%;
+    background-color: var(--colorgris);
+    width: 120%;
     border: none;
     height: 110%;
     border-radius: 10px;
+    text-transform: uppercase;
     
    
 
@@ -291,7 +370,7 @@ height: 100%;
 #botonComprar:hover{
     transform: scale(1.1);
     cursor:pointer;
-
+    background-color: var(--colornaranja);
     
 }
 
@@ -302,6 +381,7 @@ height: 100%;
     justify-content: center;
     align-items: center;
     padding-bottom: 10%;
+    padding-top: 10%;
 }
 .calzadoImg{
 
@@ -320,9 +400,43 @@ height: 100%;
 .tituloCalzado{
     font-family: var(--T-subtitulos);
     padding-bottom: 5%;
-   padding-right: 60%;
+   padding-right: 50%;
    font-size: 200%;
 }
+.tituloCalzado h2{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    font-size: 200%;
+
+}
+
+.calzadoImagen2{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+}
+.calzadoImagen3{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+.calzadoImagen4{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+}
+
+.calzadoImagen5{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+
 .img{padding: 1%;}
 
 footer{
@@ -341,3 +455,229 @@ footer ul{
     list-style: none;
     font-weight: lighter;
 }
+footer ul li:hover {
+
+    color: var(--colornaranja);
+    text-decoration: underline;
+   cursor: pointer;
+
+}
+@media screen and (max-width:700px) {
+
+    body{
+
+        width: 100%;
+        overflow-x: hidden;
+       
+    }
+
+
+    header{
+        width: 100%;
+        position: fixed;
+        padding-right: 10%;
+        
+        
+    }
+
+    .Buscar-container{display: none;}
+
+
+    .abrir-menu{
+
+        display: block;
+        background-color: var(--colornegro);
+        color: var(--colorblanco);
+        border: none;
+        font-size: 300%;
+       
+    }
+
+.nav-list{
+
+    position: fixed;
+    top: 7%;
+    right:61%;
+    background-color: var(--colornegro);
+    width: 60%;
+    height: 70%;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+    transform: translateX(-100%);
+   
+}
+
+
+.nav-list.active{
+    transform: translateX(100%);
+
+
+}
+main{
+
+    font-size: 50%;
+}
+.imagenEntradaPag{
+
+    position:inherit;
+    background-color: #ebeeef;
+    padding-top: 10%;
+    
+}
+.parrafoImgEntrada{
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../assets/page-mujer/Imagen\ inicio\ mujer.jpg) ;
+    background-size: 130%;
+ 
+   
+}
+#imgSeccion1{
+
+    display: none;
+}
+.redireccionamientoDescripcion{
+
+    width: 100%;
+    font-size: 80%;
+    gap: 10px;
+}
+.botonRedireccionamiento{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding-top: 30%;
+    padding-left: 40%;
+    padding-right: 20%;
+    
+
+
+} 
+
+#ropa{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 160%;
+}
+.tituloRopa{
+
+    font-family: var(--T-subtitulos);
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 0;
+   font-size: 150%;
+   font-weight: bolder;
+
+}
+
+.ropaImg{
+
+    width: 90%;
+}
+.descripcionProducto{
+
+    display: none;
+}
+.calzadoImg{
+
+    width: 90%;
+    font-size: 160%;
+}
+.tituloCalzado{
+
+    font-family: var(--T-subtitulos);
+   padding-top: 10%;
+   padding-bottom: 5%;
+   padding-right: 0;
+   font-size: 200%;
+   font-weight: bolder;
+
+}
+
+footer{
+
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+   
+   
+
+}
+footer h3:hover{
+
+    color: var(--colornaranja);
+
+}
+
+footer ul{
+
+    display: none;
+    
+   
+
+}
+footer h3{
+
+    font-size: 60%;
+}
+
+}
+@media screen and (max-width:1024px){
+
+    .Buscar-container{display: none;}
+    .redireccionamientoDescripcion{
+
+        width: 80%;
+    }
+    #ropa{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloRopa{
+    
+        font-family: var(--T-subtitulos);
+       padding-top: 10%;
+       padding-bottom: 5%;
+       padding-right: 0;
+       font-size: 200%;
+       font-weight: bolder;
+    
+    }
+    .calzadoImg{
+
+        width: 90%;
+        font-size: 140%;
+    }
+    .tituloCalzado{
+    
+        font-family: var(--T-subtitulos);
+       padding-top: 10%;
+       padding-bottom: 5%;
+       padding-right: 0;
+       font-size: 200%;
+       font-weight: bolder;
+    
+    }
+    .calzadoImagen1{
+
+        height: 60%;
+    }
+    
+
+
+
+}
+
+
