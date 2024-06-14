@@ -287,6 +287,15 @@ padding-bottom: 20%;
    padding-bottom: 5%;
    padding-right: 60%;
    font-size: 200%;
+   font-weight: bolder;
+
+}
+.tituloRopa h2{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    font-size: 200%;
+
 
 }
 
@@ -342,6 +351,7 @@ padding-bottom: 20%;
     font-family: var(--textos);
     font-weight: bold;
     padding-top: 3%;
+    padding-left: 2%;
     
 
 }
@@ -400,8 +410,16 @@ padding-bottom: 20%;
 .tituloCalzado{
     font-family: var(--T-subtitulos);
     padding-bottom: 5%;
-   padding-right: 60%;
+   padding-right: 50%;
    font-size: 200%;
+}
+
+.tituloCalzado h2{
+
+    font-family: var(--T-subtitulos);
+    font-weight: bold;
+    font-size: 200%;
+
 }
 .img{padding: 1%;}
 
@@ -419,4 +437,12 @@ footer ul{
 
     list-style: none;
     font-weight: lighter;
+}
+
+footer ul li:hover {
+
+    color: var(--colornaranja);
+    text-decoration: underline;
+   cursor: pointer;
+
 }
