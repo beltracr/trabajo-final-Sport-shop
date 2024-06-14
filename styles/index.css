@@ -81,57 +81,57 @@ input {
 
 /* ----MODAL DE INICIO DE SESION ------- */
 
-.iniciar-sesion{
+.iniciar-sesion {
     padding: 0;
     margin: 0;
     color: var(--color-text);
     font-size: 23px;
 }
 
-.iniciar-sesion:hover{
+.iniciar-sesion:hover {
     color: var(--text-hoover);
 }
 
-.inicio-sesion{
+.inicio-sesion {
     align-items: center;
 }
 
-.bot-ini-cre-cuet{
+.bot-ini-cre-cuet {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.btn-ini-ses{
+.btn-ini-ses {
     background: black;
     color: var(--color-text);
     padding: 10px 150px 10px 150px;
     font-size: 18px;
 }
 
-.btn-ini-ses:hover{
+.btn-ini-ses:hover {
     background: var(--text-hoover);
 }
 
-.btn-crea-cta{
+.btn-crea-cta {
     background: black;
     padding: 10px 150px 10px 150px;
     font-size: 18px;
 }
 
-.btn-crea-cta a{
+.btn-crea-cta a {
     list-style: none;
     text-decoration: none;
     color: var(--color-text);
 }
 
-.btn-crea-cta:hover{
+.btn-crea-cta:hover {
     background: var(--text-hoover);
 }
 
-.p-regis{
+.p-regis {
     color: rgb(13, 191, 0);
-    text-decoration:underline ;
+    text-decoration: underline;
 }
 
 nav {
@@ -167,12 +167,12 @@ nav ul li a:hover {
 
 /* ------GRID COLLAGE IMAGENES BANNER -------- */
 
-main{
+main {
     width: 100%;
     height: auto;
 }
 
-.prueba{
+.prueba {
     width: 100%;
     height: 86vh;
 }
@@ -273,7 +273,7 @@ main{
     bottom: -10px;
 }
 
-.b1 button:hover{
+.b1 button:hover {
     color: var(--text-hoover);
 }
 
@@ -328,10 +328,10 @@ main{
     flex-wrap: nowrap;
     overflow-x: auto;
     margin-top: 0;
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
 }
 
-.Contenedor-nuevasPromociones::-webkit-scrollbar{
+.Contenedor-nuevasPromociones::-webkit-scrollbar {
     display: none;
 }
 
@@ -416,18 +416,18 @@ h4 {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    margin-top: 0;  
+    margin-top: 0;
     position: relative;
     scroll-behavior: smooth;
 }
 
 /* Linea codigo ocultar scrolls de tendencias */
 
-.tendenciaMujer::-webkit-scrollbar{
+.tendenciaMujer::-webkit-scrollbar {
     display: none;
 }
 
-.tendenciaHombre::-webkit-scrollbar{
+.tendenciaHombre::-webkit-scrollbar {
     display: none;
 }
 
@@ -513,6 +513,7 @@ ul li a {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 
 /* --------- RESPONSIVE PARA IPAD PRO ----------- */
 
@@ -523,27 +524,54 @@ ul li a {
     }
 
     .nav{
+=======
+/* --------- RESPONSIVE PARA IPAD PRO ----------- */
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        width: 100%;
+    }
+
+    .nav {
+>>>>>>> Angelo-Gonzalez
         padding-right: 0;
         margin-right: 2%;
     }
 
+<<<<<<< HEAD
     .nueva-prom{
+=======
+    .nueva-prom {
+>>>>>>> Angelo-Gonzalez
         width: 100%;
         margin: 0;
         padding: 0;
         margin-bottom: 5%;
     }
 
+<<<<<<< HEAD
     .h2promos{
+=======
+    .h2promos {
+>>>>>>> Angelo-Gonzalez
         text-align: center;
         margin-left: 22%;
     }
 
+<<<<<<< HEAD
     .b1{
         display: none;
     }
 
     .boton-verMas{
+=======
+    .b1 {
+        display: none;
+    }
+
+    .boton-verMas {
+>>>>>>> Angelo-Gonzalez
         margin-top: 48%;
         margin-left: 18%;
     }
@@ -552,8 +580,165 @@ ul li a {
 
 /* ---------- RESPONSIVE PARA IPHONE 12 PRO -------------- */
 
+<<<<<<< HEAD
 @media screen and (max-width: 490px){
 
     
 
 }
+=======
+@media screen and (max-width: 490px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav{
+        width: 20%;
+    }
+
+    .Buscar-container{
+        display: none;
+    }
+
+    .icon-buscar{
+        display: none;
+    }
+
+    .abrir-menu {
+        display: block;
+        background-color: var(--fondo-2);
+        color: var(--color-fondo);
+        border: none;
+        font-size: 300%;
+        margin-left: 62%;  
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        position: fixed;
+        top: 7%;
+        left: 90%;
+        padding-right: 10%;
+        background-color: var(--fondo-2 );
+        width: 40%;
+        height: 40%;
+        flex-direction: column;
+        align-items: center;
+        line-height: 30px;
+        transform: translateX(-80%);
+    }
+/* 
+    .nav-list.active {
+        transform: translateX(100%);
+
+    } */
+
+    .modal-sesion1{
+        width: 84%;
+    }
+
+    .bot-ini-cre-cuet{
+        width: 100%;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .busn{
+        padding: 5px 10px;
+    }
+
+    .prueba{
+        height: 40vh;
+    }
+
+    .container-collage{
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .collage {
+        position: inherit;
+    }
+
+    .p-banner{
+        width: 70%;
+        height: 16%;
+        margin-left: 3%;
+        margin-bottom: 100%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .potencia{
+        font-size: 17px;
+    }
+
+    .promociones-sport-shopping{
+        height: auto;
+    }
+
+    .nueva-prom{
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    .h2promos{
+        font-size: 30px;
+        margin: 3% 0%;
+
+    }
+
+    .nuevasPromos{
+        width: 90%;
+    }
+
+    .comprar-promo{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        line-height: 10px;
+    }
+
+    .boton-comprar{
+        padding: 10px 15px;
+    }
+
+    .sub-tend{
+        font-size: 30px;
+    }
+    
+    .b2{
+        display: none;
+    }
+    
+    .nuevo{
+        width: 60%;
+        height: 70%;
+    }
+
+    .boton-verMas{
+        margin-left: 30%;
+    }
+
+    footer{
+        width: 100%;
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+        line-height: 2px;
+    }
+
+    .subtitulo-footer{
+        display: block;
+    }
+
+    footer ul li{
+        display: none;
+    }
+ }
+>>>>>>> Angelo-Gonzalez

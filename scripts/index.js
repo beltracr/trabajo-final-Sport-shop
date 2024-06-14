@@ -52,3 +52,11 @@ btnPromLeft.addEventListener("click",()=> {
     prom.scrollLeft -= 400;
 })
 
+
+
+const navlist = document.querySelector(".nav-list");
+const abrirmenu = document.querySelector(".abrir-menu");
+
+
+abrirmenu.addEventListener("click", () => { 
+    navlist.classList.toggle("active") });
