@@ -452,7 +452,7 @@ footer ul li:hover {
 
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:700px) {
 
     body{
 
@@ -618,6 +618,54 @@ footer h3{
 
     font-size: 60%;
 }
+
+}
+@media screen and (max-width:1024px){
+
+    .Buscar-container{display: none;}
+    .redireccionamientoDescripcion{
+
+        width: 80%;
+    }
+    #ropa{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloRopa{
+    
+        font-family: var(--T-subtitulos);
+       padding-top: 10%;
+       padding-bottom: 5%;
+       padding-right: 0;
+       font-size: 200%;
+       font-weight: bolder;
+    
+    }
+    .calzadoImg{
+
+        width: 90%;
+        font-size: 140%;
+    }
+    .tituloCalzado{
+    
+        font-family: var(--T-subtitulos);
+       padding-top: 10%;
+       padding-bottom: 5%;
+       padding-right: 0;
+       font-size: 200%;
+       font-weight: bolder;
+    
+    }
+    .calzadoImagen1{
+
+        height: 60%;
+    }
+    
+
+
 
 }
 
