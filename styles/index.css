@@ -512,3 +512,48 @@ ul li a {
 .redes {
     font-size: 20px;
 }
+
+
+/* --------- RESPONSIVE PARA IPAD PRO ----------- */
+
+@media screen and (max-width: 1024px){
+
+    header{
+        width: 100%;
+    }
+
+    .nav{
+        padding-right: 0;
+        margin-right: 2%;
+    }
+
+    .nueva-prom{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5%;
+    }
+
+    .h2promos{
+        text-align: center;
+        margin-left: 22%;
+    }
+
+    .b1{
+        display: none;
+    }
+
+    .boton-verMas{
+        margin-top: 48%;
+        margin-left: 18%;
+    }
+
+}
+
+/* ---------- RESPONSIVE PARA IPHONE 12 PRO -------------- */
+
+@media screen and (max-width: 490px){
+
+    
+
+}
