@@ -59,4 +59,5 @@ const abrirmenu = document.querySelector(".abrir-menu");
 
 
 abrirmenu.addEventListener("click", () => { 
-    navlist.classList.toggle("active") });
+    navlist.classList.toggle("active") 
+});
