@@ -33,50 +33,98 @@
     display: none;
 }
 
-body {
+body{
     overflow-x: hidden;
-    height: 100%;
 }
 
 /* inicio de mi header */
 
 header {
-    background-color: #000000;
+    background-image: url(../assets/img-header.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.6s ease;
+
 }
 
-.img-logo {
-    max-width: 4rem;
+.nav.active{
+    background: var(--fondo-2);
+}
+
+.menu {
+    display: flex;
+    gap: 45px;
+}
+
+.menu li{
+    list-style: none;
+    padding-right: 40px;
+    padding-top: 3%;
+}
+
+.menu li a{
+    font-size: 25px;
+}
+
+.menu li :hover{
+    font-size: 26px;
+    transition: .8s, color .10s;
+}
+
+.Logo-world {
+    height: 9vh;
+    margin-left: 2%;
+}
+
+.Logo-world img {
+    max-width: 9rem;
+    border-radius: 5px;
+}
+
+.nav ul {
+    flex-direction: row;
 }
 
 .Buscar-container {
-    width: 30%;
-    height: 30px;
+    padding-left: 15%;
+    width: 50%;
+    height: 40px;
     display: flex;
-    align-items: center;
+    justify-content: end;
 }
 
 input {
     width: 100%;
     height: 100%;
     display: block;
-    border-radius: 12px;
+    border-radius: 15px;
     border: none;
-    padding-left: 4%;
 }
 
 .icon-buscar {
     border: none;
     position: absolute;
-    margin-left: 13%;
+    margin-left: 11%;
     background: none;
     display: block;
+    color: #000000;
+    font-size: 15px;
 }
 
 .icon-buscar:hover {
     color: var(--color-fondo);
+    background: var(--color-text);
 }
 
 /* ----MODAL DE INICIO DE SESION ------- */
@@ -85,29 +133,24 @@ input {
     padding: 0;
     margin: 0;
     color: var(--color-text);
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .iniciar-sesion:hover {
     color: var(--text-hoover);
 }
 
-.inicio-sesion {
-    align-items: center;
-}
-
 .bot-ini-cre-cuet {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .btn-ini-ses {
     background: black;
     color: var(--color-text);
     padding: 10px 150px 10px 150px;
-    font-size: 18px;
-}
+    font-size: 20px;
+} 
 
 .btn-ini-ses:hover {
     background: var(--text-hoover);
@@ -134,99 +177,16 @@ input {
     text-decoration: underline;
 }
 
-nav {
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 2%;
+.scrol{
+    height: 100px;
 }
 
-.nav-list {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-top: 2%;
-    align-items: center;
-}
+/* --------INICIO DEL MAIN------------------ */
 
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul li a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-family: var(--T-subtitulos);
-    font-size: 20px;
-}
-
-nav ul li a:hover {
-    color: var(--text-hoover);
-    text-decoration: underline;
-}
-
-/* ------GRID COLLAGE IMAGENES BANNER -------- */
 
 main {
     width: 100%;
     height: auto;
-}
-
-.prueba {
-    width: 100%;
-    height: 86vh;
-}
-
-.container-collage {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.collage {
-    display: grid;
-    height: 100%;
-    width: 100%;
-}
-
-.container-collage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.c-1 {
-    grid-row: 1/3;
-    grid-column: 1/2;
-}
-
-.c-2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-
-.c-3 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-
-.c-4 {
-    grid-row: 1/3;
-    grid-column: 3/4;
-}
-
-.c-5 {
-    grid-row: 1/2;
-    grid-column: 4/5;
-}
-
-.c-6 {
-    grid-row: 2/3;
-    grid-column: 4/5;
 }
 
 /* --------TEXTO PROMOCIONAL ----------- */
@@ -553,19 +513,19 @@ ul li a {
 
 @media screen and (max-width: 490px) {
 
-    body{
+    body {
         overflow-x: hidden;
     }
 
-    .nav{
+    .nav {
         width: 20%;
     }
 
-    .Buscar-container{
+    .Buscar-container {
         display: none;
     }
 
-    .icon-buscar{
+    .icon-buscar {
         display: none;
     }
 
@@ -575,7 +535,7 @@ ul li a {
         color: var(--color-fondo);
         border: none;
         font-size: 300%;
-        margin-left: 62%;  
+        margin-left: 62%;
     }
 
     .nav-list {
@@ -585,7 +545,7 @@ ul li a {
         top: 7%;
         left: 90%;
         padding-right: 10%;
-        background-color: var(--fondo-2 );
+        background-color: var(--fondo-2);
         width: 40%;
         height: 40%;
         flex-direction: column;
@@ -593,31 +553,32 @@ ul li a {
         line-height: 30px;
         transform: translateX(-80%);
     }
-/* 
+
+    /* 
     .nav-list.active {
         transform: translateX(100%);
 
     } */
 
-    .modal-sesion1{
+    .modal-sesion1 {
         width: 84%;
     }
 
-    .bot-ini-cre-cuet{
+    .bot-ini-cre-cuet {
         width: 100%;
         align-items: center;
         padding: 2px;
     }
 
-    .busn{
+    .busn {
         padding: 5px 10px;
     }
 
-    .prueba{
+    .prueba {
         height: 40vh;
     }
 
-    .container-collage{
+    .container-collage {
         width: 100vw;
         height: 100%;
         overflow: hidden;
@@ -628,7 +589,7 @@ ul li a {
         position: inherit;
     }
 
-    .p-banner{
+    .p-banner {
         width: 70%;
         height: 16%;
         margin-left: 3%;
@@ -637,30 +598,30 @@ ul li a {
         font-weight: bold;
     }
 
-    .potencia{
+    .potencia {
         font-size: 17px;
     }
 
-    .promociones-sport-shopping{
+    .promociones-sport-shopping {
         height: auto;
     }
 
-    .nueva-prom{
+    .nueva-prom {
         width: 65%;
         margin-left: 17%;
     }
 
-    .h2promos{
+    .h2promos {
         font-size: 30px;
         margin: 3% 0%;
 
     }
 
-    .nuevasPromos{
+    .nuevasPromos {
         width: 90%;
     }
 
-    .comprar-promo{
+    .comprar-promo {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -668,28 +629,28 @@ ul li a {
         line-height: 10px;
     }
 
-    .boton-comprar{
+    .boton-comprar {
         padding: 10px 15px;
     }
 
-    .sub-tend{
+    .sub-tend {
         font-size: 30px;
     }
-    
-    .b2{
+
+    .b2 {
         display: none;
     }
-    
-    .nuevo{
+
+    .nuevo {
         width: 60%;
         height: 70%;
     }
 
-    .boton-verMas{
+    .boton-verMas {
         margin-left: 30%;
     }
 
-    footer{
+    footer {
         width: 100%;
         padding-top: 15%;
         display: flex;
@@ -697,11 +658,11 @@ ul li a {
         line-height: 2px;
     }
 
-    .subtitulo-footer{
+    .subtitulo-footer {
         display: block;
     }
 
-    footer ul li{
+    footer ul li {
         display: none;
     }
- }
+}

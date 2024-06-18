@@ -1,4 +1,12 @@
 
+// Navegacion - activar backgound y posisionamiento fijo
+
+const nav = document.querySelector (".nav");
+
+    window.addEventListener("scroll", function(){
+        nav.classList.toggle("active", this.window.scrollY >0)
+    })
+
 // -------- scrols boton de las tendencias mujer
 
 const mujR = document.querySelector("#btn-right-mujer");
@@ -33,8 +41,6 @@ mujL.addEventListener("click",()=> {
 })
 
 //  ----------- scrols boton de las tendencias hombre
-
-
 
 
 hombR.addEventListener("click",()=> {

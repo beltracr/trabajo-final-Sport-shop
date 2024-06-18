@@ -8,12 +8,13 @@
     <!-- Metas donde ingresar autores. descripción, keywords -->
 
     <meta name="author" content="Angelo Gonzalez, Cristian Beltran">
-    <meta name="keywords" content="Inicio de pagina web sport shopping">
+    <meta name="keywords" content="Inicio de pagina web World Outlet">
     <meta name="Description" content="Proyecto del grupo 1 de BIT, pagina de ropa deportiva, deportes, prendas running, box, descuentos, 
     ouleth tienda deportiva, nike, adidas, puma, under armour, kappa, skechers">
 
     <!-- icon logo-->
-    <link rel="shortcut icon" href="./assets/logo/Shopping_shop_logo.png" type="imageLogo_sport_shop_deportiva_tienda">
+    <link rel="shortcut icon" href="./assets/logo/Shopping_shop_logo.png"
+        type="imageLogo_World_Outlet_deportiva_tienda">
 
 
     <!-- link enlace de bootstrap -->
@@ -34,7 +35,7 @@
     <!-- link de styles -->
     <link rel="stylesheet" href="./styles/index.css">
 
-    <title>Inicio | Sport Shop</title>
+    <title>Inicio | World Outlet</title>
 </head>
 
 <!-- inicio del body, llevara main, section con 3 articles con variedad de DIV dentro. -->
@@ -42,115 +43,64 @@
 <body>
     <!-- inicio del header -->
     <header>
-        <a href="#"><img class="img-logo" src="./assets/logo/Shopping_shop_logo.png" alt="shopping_shop_logo"></a>
-        
         <nav class="nav">
-            <div class="Buscar-container">
-                <input class="input" type="text" id="search-input" placeholder="Buscar...">
-                <button class="icon-buscar" id="buscar-button">
-                    <i class="bi bi-search" aria-hidden="true"></i>
-                </button>
-            </div>
-            <ul class="nav-list">
+            <div class="Logo-world"><a href=""><img src="./assets/logo/logo-world-outlet.png" alt="logo-world-outlet"></a></div>
+            <div class="container-fluid Buscar-container">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Burcar..." aria-label="Search">
+                  <button class="btn btn-outline-success icon-buscar" type="submit"><i class="bi bi-search "></i></button>
+                </form>
+              </div>
+            <ul class="menu">
                 <li><a href="./pages/page-hombre.html">Hombre</a></li>
                 <li><a href="./pages/page.mujer.html">Mujer</a></li>
-                <!-- <li><a href="#">Soporte</li></a> -->
-                <button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i>
-                </button>
-                <li><a href="./pages/modal.carrito.html"><i class="bi bi-bag"></a></i></li>
-
-                <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
-
-                <!-- <li></li><button class="btn btn iniciar-sesion" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-bag"></i></button></li> -->
+                <li><button type="button" class="btn iniciar-sesion" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"><i class="bi bi-person-fill"></i></li>
+                <li><a href="#"><i class="bi bi-cart3"></i></a></li></button>
             </ul>
-
-            <!-- Modal carrito de compras -- VERIFICAR PARA UTILIZAR  -->
-
-            <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Aqui iran los productos agregados a carrito de compras</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  foto de producto + precios + descuentos + total 
-                </div>
-              </div> -->
-
-            <!-- Modal inicio de sesion -->
-            <div class="modal fade modal-sesion1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header inicio-sesion">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </nav>
+        <div class="modal fade modal-sesion1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header inicio-sesion">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicia sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo electrónico</label>
                         </div>
-                        <div class="modal-body">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
-                                <label for="floatingInput">Correo electrónico</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="password" class="form-control" id="floatingPassword"
-                                    placeholder="Password">
-                                <label for="floatingPassword">Contraseña</label>
-                            </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Contraseña</label>
                         </div>
-                        <div class="modal-footer bot-ini-cre-cuet">
-                            <button type="button" class="btn btn-ini-ses busn">Iniciar sesión</button>
-                            <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
-                            <button type="button" class="btn btn-crea-cta busn" data-bs-dismiss="modal"> <a
-                                    href="./pages/registro.html">Crear Cuenta</a></button>
-                        </div>
+                    </div>
+                    <div class="modal-footer bot-ini-cre-cuet">
+                        <button type="button" class="btn btn-ini-ses busn">Iniciar sesión</button>
+                        <a class="p-regis" href="#">¿ Aún no estas registrado ?</a>
+                        <button type="button" class="btn btn-crea-cta busn" data-bs-dismiss="modal"> <a
+                                href="./pages/registro.html">Crear Cuenta</a></button>
                     </div>
                 </div>
             </div>
-        </nav>
-        <button class="abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
     </header>
+    <div class="scrol">
 
+    </div>
     <!-- inicio del main -->
 
     <main>
-
-        <div class="prueba">
-            <article class="container-collage">
-                <div class="collage c-1">
-                    <img src="./assets/page-hombre/AtleticoNacional/AtleticoNacional.jpg" alt="atletico-nacional">
-                </div>
-                <div class="collage c-2">
-                    <img src="./assets/page-hombre/ropaEnlace/ropaEnlace.jpg" alt="ropa-enlace">
-                </div>
-                <div class="collage c-3">
-                    <img src="./assets/page-mujer/ChaquetaTerrexMulti2LRain.Rdy/ChaquetaTerrexMulti2LRain.Rdy.jpg"
-                        alt="caqueta-muilti-rain">
-                </div>
-                <div class="collage c-4">
-                    <img src="./assets/page-hombre/NikeMilerFlash/NikeMilerFlash.jpg" alt="nike-miler-flash">
-                </div>
-                <div class="collage c-5">
-                    <img src="./assets/page-mujer/NikeSportswearClubFleece/NikeSportsWearClubFleece.jpg"
-                        alt="sport-wear-club">
-                </div>
-                <div class="collage c-6">
-                    <img src="./assets/page-hombre/sudaderaNike1/sudaderaNike1.jpg" alt="nike-dudadera">
-                </div>
-            </article>
-        </div>
-
-        <!-- <img class="img-banner" src="./assets/banner-inicio.png" alt="renueva-potencia-resalta"> -->
-
-        <h1 class="p-banner"> <span class="potencia"> Shopping Shop</span> <br> Colecciones deportivas 2024 </h1>
+        <h1 class="p-banner"> <span class="potencia"> World Outlet</span> <br> Colecciones deportivas 2024 </h1>
 
         <!-- EN ESTA PAGINA REALIZAREMOS 3 SECTION, 1 PARA NUEVAS PROMOCIONES, 1 PARA TENDENCIA MUJER, 1 PARA TENDENCIA HOMBRE -->
 
         <!-- inicio de section de mis promociones -->
 
         <section class="promociones-sport-shopping">
-            
+
             <!-- 3 articles que referenciaran nuevas promociones, tendencia mujer, tendencia hombre -->
             <div class="nueva-prom">
                 <h2 class="h2promos">Nuevas Promociones</h2>
@@ -352,8 +302,6 @@
     </footer>
 
     <!-- Link de JavaScripts -->
-
-    <!-- <script src="./scripts/index.js"></script> -->
     <script src="./scripts/index.js"></script>
 </body>
 
