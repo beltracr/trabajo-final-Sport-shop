@@ -7,12 +7,13 @@ const nav = document.querySelector (".nav");
         nav.classList.toggle("active", this.window.scrollY >0)
     })
 
+
 // -------- scrols boton de las tendencias mujer
 
 const mujR = document.querySelector("#btn-right-mujer");
 const mujL = document.querySelector("#btn-left-mujer");
 
-const content =document.querySelector(".tendenciaMujer");
+const contentMuj =document.querySelector(".tendenciaMujer");
 
 // llamar a botones tendencia hombre
 
@@ -33,33 +34,33 @@ const prom = document.querySelector(".Contenedor-nuevasPromociones");
 
 // ----------- scrols boton de las tendencias mujer
 mujR.addEventListener("click",()=> {
-    content.scrollLeft += 600;
+    contentMuj.scrollLeft += 600;
 } );
 
 mujL.addEventListener("click",()=> {
-    content.scrollLeft -= 600;
+    contentMuj.scrollLeft -= 600;
 })
 
 //  ----------- scrols boton de las tendencias hombre
 
 
 hombR.addEventListener("click",()=> {
-    content.scrollLeft += 600;
+    contentHom.scrollLeft += 600;
 } );
 
 hombL.addEventListener("click",()=> {
-    content.scrollLeft -= 600;
+    contentHom.scrollLeft -= 600;
 })
 
 // ----------- scrols boton de las nuevas promociones
 
 
 btnPromRight.addEventListener("click",()=> {
-    content.scrollLeft += 400;
+    prom.scrollLeft += 400;
 } );
 
 btnPromLeft.addEventListener("click",()=> {
-    content.scrollLeft -= 400;
+    prom.scrollLeft -= 400;
 })
 
 
